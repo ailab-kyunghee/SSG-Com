@@ -50,7 +50,7 @@
           {% if page.authors %}
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              {{ page.authors }}
+              {{ page.authors | markdownify }}
             </span>
           </div>
           {% endif %}
@@ -58,7 +58,7 @@
           {% if page.affiliations %}
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              {{ page.affiliations }}
+              {{ page.affiliations | markdownify }}
             </span>
           </div>
           {% endif %}
