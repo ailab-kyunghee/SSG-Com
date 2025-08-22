@@ -2,15 +2,15 @@
 layout: project_page
 permalink: /
 
-title: On Computable Numbers, with an Application to the Entscheidungsproblem
+title: \[MICCAI 2025\] Towards Holistic Surgical Scene Graph
 authors:
-    A. M. Turing
+    Jongmin Shin*, Enki Cho*, Ka Young Kim*, Jung Yong Kim, Seong Tae Kim†, Namkee Oh†
 affiliations:
-    King's College, Cambridge
-paper: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
-video: https://www.youtube.com/results?search_query=turing+machine
-code: https://github.com/topics/turing-machines
-data: https://huggingface.co/docs/datasets
+    Kyung Hee University
+paper: https://arxiv.org/pdf/2507.15541
+# video: https://www.youtube.com/results?search_query=turing+machine
+code: https://github.com/ailab-kyunghee/SSG-Com
+# data: https://huggingface.co/docs/datasets
 ---
 
 <!-- Using HTML to center the abstract -->
