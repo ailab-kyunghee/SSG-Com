@@ -4,11 +4,11 @@ permalink: /
 
 title: Towards Holistic Surgical Scene Graph
 authors:
-    Jongmin Shin*¹, Enki Cho*², Ka Young Kim*²,
-    Jung Yong Kim¹, Seong Tae Kim†², Namkee Oh†¹
+    - Jongmin Shin*¹, Enki Cho*², Ka Young Kim*²,
+    - Jung Yong Kim¹, Seong Tae Kim†², Namkee Oh†¹
 affiliations:
-    ¹Department of Surgery, Samsung Medical Center, Seoul 06351, Republic of Korea
-    ²Kyung Hee University, Yongin 17104, Republic of Korea
+    - ¹Department of Surgery, Samsung Medical Center, Seoul 06351, Republic of Korea
+    - ²Kyung Hee University, Yongin 17104, Republic of Korea
 paper: https://arxiv.org/pdf/2507.15541
 # video: https://www.youtube.com/results?search_query=turing+machine
 code: https://github.com/ailab-kyunghee/SSG-Com
