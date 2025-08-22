@@ -2,11 +2,13 @@
 layout: project_page
 permalink: /
 
-title: \[MICCAI 2025\] Towards Holistic Surgical Scene Graph
+title: Towards Holistic Surgical Scene Graph
 authors:
-    Jongmin Shin*, Enki Cho*, Ka Young Kim*, Jung Yong Kim, Seong Tae Kim†, Namkee Oh†
+    Jongmin Shin*¹, Enki Cho*², Ka Young Kim*²,
+    Jung Yong Kim¹, Seong Tae Kim†², Namkee Oh†¹
 affiliations:
-    Kyung Hee University
+    ¹Department of Surgery, Samsung Medical Center, Seoul 06351, Republic of Korea
+    ²Kyung Hee University, Yongin 17104, Republic of Korea
 paper: https://arxiv.org/pdf/2507.15541
 # video: https://www.youtube.com/results?search_query=turing+machine
 code: https://github.com/ailab-kyunghee/SSG-Com
@@ -18,19 +20,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
     <div class="column is-four-fifths">
         <h2>Abstract</h2>
         <div class="content has-text-justified">
-The "computable" numbers may be described briefly as the real
-numbers whose expressions as a decimal are calculable by finite means.
-Although the subject of this paper is ostensibly the computable numbers.
-it is almost equally easy to define and investigate computable functions
-of an integral variable or a real or computable variable, computable
-predicates, and so forth. The fundamental problems involved are,
-however, the same in each case, and I have chosen the computable numbers
-for explicit treatment as involving the least cumbrous technique. I hope
-shortly to give an account of the relations of the computable numbers,
-functions, and so forth to one another. This will include a development
-of the theory of functions of a real variable expressed in terms of computable
-numbers. According to my definition, a number is computable
-if its decimal can be written down by a machine...
+Surgical scene understanding is crucial for computer-assisted intervention systems, requiring visual comprehension of surgical scenes that involves diverse elements such as surgical tools, anatomical structures, and their interactions. To effectively represent the complex information in surgical scenes, graph-based approaches have been explored to structurally model surgical entities and their relationships. Previous surgical scene graph studies have demonstrated the feasibility of representing surgical scenes using graphs. However, certain aspects of surgical scenes-such as diverse combinations of tool-action-target and the identity of the hand operating the tool-remain underexplored in graph-based representations, despite their importance. To incorporate these aspects into graph representations, we propose Endoscapes-SG201 dataset, which includes annotations for tool-action-target combinations and hand identity. We also introduce SSG-Com, a graph-based method designed to learn and represent these critical elements. Through experiments on downstream tasks such as critical view of safety assessment and action triplet recognition, we demonstrated the importance of integrating these essential scene graph components, highlighting their significant contribution to surgical scene understanding. The code and dataset are available at <a href="https://github.com/ailab-kyunghee/SSG-Com" target="_blank">this https URL</a>.
         </div>
     </div>
 </div>
