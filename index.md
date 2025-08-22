@@ -2,7 +2,7 @@
 layout: project_page
 permalink: /
 
-title: "[MICCAI 2025] Towards Holistic Surgical Scene Graph"
+title: Towards Holistic Surgical Scene Graph
 authors: |
     Jongmin Shin*¹, Enki Cho*², Ka Young Kim*²,
     Jung Yong Kim¹, Seong Tae Kim†², Namkee Oh†¹
