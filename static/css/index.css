@@ -1,5 +1,12 @@
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/static/fonts/Pretendard-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Pretendard', sans-serif !important;
 }
 
 

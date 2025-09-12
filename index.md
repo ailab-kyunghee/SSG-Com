@@ -12,6 +12,9 @@ affiliations:
 paper: https://arxiv.org/pdf/2507.15541
 code: https://github.com/ailab-kyunghee/SSG-Com
 ---
+
+
+![Illustration](/static/image/1.png)  
 <!-- Abstract -->
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
@@ -30,7 +33,6 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 
 ---
 
-![Illustration](/static/image/1.png)  
 ![Key Contribution](/static/image/2.png)  
 ![Dataset Comparison](/static/image/3.png)  
 ![Endoscapes-SG201 Dataset Details](/static/image/4.png)  
