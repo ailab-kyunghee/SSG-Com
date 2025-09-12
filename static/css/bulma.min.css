@@ -1977,7 +1977,7 @@ fieldset[disabled] .button {
   margin-top: 1em;
 }
 .content h2 {
-  font-size: 1.75em;
+  font-size: 2.5em;
   margin-bottom: 0.5714em;
 }
 .content h2:not(:first-child) {
@@ -7633,9 +7633,9 @@ label.panel-block:hover {
   }
 }
 .columns {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
-  margin-top: -0.75rem;
+  margin-left: -5rem;
+  margin-right: -5rem;
+  margin-top: 1.5rem;
 }
 .columns:last-child {
   margin-bottom: -0.75rem;
@@ -10594,7 +10594,7 @@ a.has-text-danger-dark:hover {
   padding: 3rem 1.5rem;
 }
 .section {
-  padding: 3rem 1.5rem;
+  padding: 0rem 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .section.is-medium {
