@@ -47,7 +47,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
     <img src="./static/image/3.png" alt="Dataset Comparison">
     <div class="content has-text-justified">
       <p>
-        이 테이블은 그동안 써지컬 씬 그래프 논문들에서 사용해온 데이터셋들과 Endoscapes-SG201 사이의 관
+        This table contrasts the datasets used in previous surgical scene graph studies with Endoscapes-SG201. Designed with holistic scene graph research in mind, Endoscapes-SG201 brings together a broad spectrum of tools and anatomical structures as graph nodes, diverse relationships as graph edges, and Hand Identity labels as attributes of the tool nodes. By unifying these elements, the dataset provides a more expressive and comprehensive foundation for modeling surgical scenes.
       </p>
       </div>
       <div class="content has-text-justified">
@@ -61,7 +61,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
     <img src="./static/image/5.png" alt="SSG-Com Overall Architecture">
     <div class="content has-text-justified">
       <p>
-        SSG-Com dataset introduces XXX. 
+        SSG-Com은 Endoscapes-SG201의 다양한 label들을 학습시키기 위해 디자인되었습니다. 
       </p>
     </div>
   </div>
