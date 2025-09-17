@@ -479,7 +479,7 @@ pre {
 }
 body {
   color: #4a4a4a;
-  font-size: 1em;
+  font-size: 1.4em;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -1977,7 +1977,7 @@ fieldset[disabled] .button {
   margin-top: 1em;
 }
 .content h2 {
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 0.5714em;
 }
 .content h2:not(:first-child) {
@@ -6824,7 +6824,7 @@ label.panel-block:hover {
   .column.is-four-fifths,
   .column.is-four-fifths-tablet {
     flex: none;
-    width: 80%;
+    width: 85%;
   }
   .column.is-offset-three-quarters,
   .column.is-offset-three-quarters-tablet {
@@ -7635,7 +7635,7 @@ label.panel-block:hover {
 .columns {
   margin-left: -5rem;
   margin-right: -5rem;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 }
 .columns:last-child {
   margin-bottom: -0.75rem;

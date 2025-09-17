@@ -18,20 +18,33 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 <!-- Abstract -->
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-        <h2>Abstract</h2>
+        <h3>Abstract</h3>
         <div class="content has-text-justified">
         Surgical scene understanding is crucial for computer-assisted intervention systems, requiring visual comprehension of surgical scenes that involves diverse elements such as surgical tools, anatomical structures, and their interactions. 
         To effectively represent the complex information in surgical scenes, graph-based approaches have been explored to structurally model surgical entities and their relationships. 
         However, aspects such as tool–action–target combinations and the identity of the operating hand remain underexplored. 
 
-        To address this, we propose <b>Endoscapes-SG201</b>, a new dataset including annotations for tool–action–target and hand identity. 
+        To address this, we propose <b>Endoscapes-SG201</b>, a new dataset including annotations for action triplets(tool–action–target) and hand identity. 
         We also introduce <b>SSG-Com</b>, a graph-based method designed to represent these critical elements. 
         Experiments on downstream tasks—Critical View of Safety (CVS) assessment and action triplet recognition—demonstrate the importance of integrating these scene graph components, significantly advancing holistic surgical scene understanding. 
         </div>
     </div>
 </div>
 
----
+<div class="columns is-centered">
+    <div class="column is-four-fifths">
+        <h2>Main Contribution</h2>
+        <div class="content has-text-justified">
+        Surgical scene understanding is crucial for computer-assisted intervention systems, requiring visual comprehension of surgical scenes that involves diverse elements such as surgical tools, anatomical structures, and their interactions. 
+        To effectively represent the complex information in surgical scenes, graph-based approaches have been explored to structurally model surgical entities and their relationships. 
+        However, aspects such as tool–action–target combinations and the identity of the operating hand remain underexplored. 
+
+        To address this, we propose <b>Endoscapes-SG201</b>, a new dataset including annotations for action triplets(tool–action–target) and hand identity. 
+        We also introduce <b>SSG-Com</b>, a graph-based method designed to represent these critical elements. 
+        Experiments on downstream tasks—Critical View of Safety (CVS) assessment and action triplet recognition—demonstrate the importance of integrating these scene graph components, significantly advancing holistic surgical scene understanding. 
+        </div>
+    </div>
+</div>
 
 ![Key Contribution](/static/image/2.png)  
 ![Dataset Comparison](/static/image/3.png)  
