@@ -36,12 +36,17 @@ code: https://github.com/ailab-kyunghee/SSG-Com
     <img src="./static/image/2.png" alt="Key Contribution">
   </div>
   <h3>Endoscapes-SG201</h3>
-  <div class="is-four-fifths has-text-centered">
-    <img src="./static/image/construction.png">
-        <div class="content has-text-justified">
-        We were fortunate to build Endoscapes-SG201, a dataset for holistic scene graph research, by extending and refining the publicly available Endoscapes-Bbox201 dataset released by CAMMA. Two clinical experts from Samsung Medical Center refined the bounding boxes in Endoscapes-Bbox201, and the original "Tool" category was subdivided into six distinct classes. In addition, we introduced action labels describing interactions between tools and anatomical structures, as well as Hand Identity labels specifying which hand was manipulating each tool.
-        </div>
-  </div>
+  <img src="./static/image/construction.png">
+</div>
+
+We were fortunate to build Endoscapes-SG201, a dataset for holistic scene graph research, by extending and refining the publicly available [Endoscapes-Bbox201](https://github.com/CAMMA-public/Endoscapes) dataset released by CAMMA.
+
+To annotate additional labels, two clinical experts from Samsung Medical Center refined the bounding boxes in Endoscapes-Bbox201.
+- **Step 1**: We refined Bounding Boxes from Endoscapes-Bbox201
+- **Step 2**: We subdivided the 'Tool' class into 6 classes
+- **Step 3**: We annotated Action labels which describes interactions between tools and anatomical structures, and Hand Identity labels which specifies which hand is manipulating each tool
+
+<div class="is-centered">
     <h4>Dataset Comparison</h4>
     <div class="is-four-fifths has-text-centered">
     <img src="./static/image/3.png" alt="Dataset Comparison">
@@ -88,13 +93,14 @@ SSG-Com is designed to leverage the diverse labels of Endoscapes-SG201.
 <div class="is-centered">
   <div class="is-four-fifths">
     <h2>Experimental Results</h2>
-        <div class="content has-text-justified">
-      <p>
-      We employed the latent graph to perform two downstream tasks: Action Triplet Recognition and CVS prediction.
-      </p>
-    </div>
   </div>
+</div>
+      
+We employed the latent graph to perform two downstream tasks.
+- Action Triplet Recognition
+- CVS prediction
 
+<div class="is-centered">
   <div class="is-four-fifths">
     <h3>Quantitative Results</h3>
     <img src="./static/image/6.png" alt="Quantitative Results">
