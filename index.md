@@ -60,10 +60,9 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 This table presents the category-wise distribution of the additional labels introduced in Endoscapes-SG201.
 
 - **Additional Annotations:**
-- 6 Surgical Instruments: Hook (HK), Grasper (GP), Clipper (CL), Bipolar (BP), Irrigator (IG), Scissors (SC)
-- 6 Surgical Actions: Dissect (Dis.), Retract (Ret.), Grasp (Gr.), Clip (Cl.), Coagulate (Co.), Null
-- 3 Hand Identities: Operator’s Right Hand (Rt), Operator’s Left Hand (Lt), Assistant’s Hand (Assi)
-ategory-wise distribution of labels we added to Endoscapes-SG201.
+  - ""6 Surgical Instruments"": Hook (HK), Grasper (GP), Clipper (CL), Bipolar (BP), Irrigator (IG), Scissors (SC)
+  - ""6 Surgical Actions"": Dissect (Dis.), Retract (Ret.), Grasp (Gr.), Clip (Cl.), Coagulate (Co.), Null
+  - ""3 Hand Identities"": Operator’s Right Hand (Rt), Operator’s Left Hand (Lt), Assistant’s Hand (Assi)
 
 
 <div>
