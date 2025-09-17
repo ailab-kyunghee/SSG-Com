@@ -6488,7 +6488,7 @@ label.panel-block:hover {
 }
 .columns.is-mobile > .column.is-four-fifths {
   flex: none;
-  width: 80%;
+  width: 85%;
 }
 .columns.is-mobile > .column.is-offset-three-quarters {
   margin-left: 75%;
