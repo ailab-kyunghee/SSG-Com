@@ -30,19 +30,20 @@ code: https://github.com/ailab-kyunghee/SSG-Com
     </div>
 </div>
 
-<div class="columns is-centered">
-  <div class="column is-four-fifths">
+<div class="is-centered">
+  <div class="is-four-fifths">
     <h2>Main Contribution</h2>
     <img src="/static/image/2.png" alt="Key Contribution">
   </div>
 
   <div class="is-four-fifths">
     <h3>Endoscapes-SG201</h3>
-    <h4>Comparison with Datasets</h4>
+    감사하게도 CAMMA에서 공개해준 CVS 데이터셋인 Endoscapes-Bbox201를 기반으로 홀리스틱 씬 그래프 연구에 적합하도록 annotation을 더하고 수정하였습니다. 
+    <h4>Dataset Comparison</h4>
     <img src="/static/image/3.png" alt="Dataset Comparison">
     <div class="content has-text-justified">
       <p>
-        Endoscapes-SG20 dataset provides XXX. 
+        이 테이블은 그동안 써지컬 씬 그래프 논문들에서 사용해온 데이터셋들과 Endoscapes-SG201 사이의 관
       </p>
       <h4>Endoscapes-SG201 Details</h4>
       <img src="/static/image/4.png" alt="Endoscapes-SG201 Dataset Details">
@@ -60,7 +61,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
   </div>
 </div>
 
-<div class="columns is-centered">
+<div class="is-centered">
   <div class="is-four-fifths">
     <h2>Experimental Results</h2>
   </div>
