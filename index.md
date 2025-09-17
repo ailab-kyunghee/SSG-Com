@@ -53,19 +53,20 @@ code: https://github.com/ailab-kyunghee/SSG-Com
       <div class="content has-text-justified">
       <h4>Endoscapes-SG201 Details</h4>
       <img src="./static/image/4.png" alt="Endoscapes-SG201 Dataset Details">
-      <p>
-      This table summarizes the category-wise distribution of surgical instruments, actions, and manipulating hands in the Endoscapes-SG201 dataset. The surgical instruments include Hook (HK), Grasper (GP), Clipper (CL), Bipolar (BP), Irrigator (IG), and Scissors (SC), while the Actions consist of Dissect (Dis.), Retract (Ret.), Grasp (Gr.), Clip (Cl.), Coagulate (Co.), and Null verb (Null.). For Hand Identity, we distinguish between the operator’s right hand (Rt), left hand (Lt), and the assistant’s hand (Assi). Following the partitioning schemes adopted in previous studies, the dataset is split into 1,212 training frames, 409 validation frames, and 312 test frames.
-      </p>
     </div>
   </div>
+</div>
 
-- **1,933 frames** from **201 laparoscopic cholecystectomy videos**
+This table shows the category-wise distribution of labels we added to Endoscapes-SG201.
+
+- **1,933 frames** from **201 laparoscopic cholecystectomy videos** in original Endoscapes dataset
 - **Annotations:**
   - 6 Surgical Instruments: Hook(HK), Grasper(GP), Clipper(CL), Bipolar(BP), Irrigator(IG), Scissors(SC)
   - 6 Surgical Actions: Dissect(Dis.), Retract(Ret.), Grasp(Gr.), Clip(Cl.), Coagulate(Co.), Null
   - 3 Hand Identity: Operator's Right Hand(Rt), Operator's Left Hand(Lt), Assistant's Hand(Assi)
 - **Splits:** 1,212 train / 409 val / 312 test (frames)
 
+<div>
   <div class="is-four-fifths">
     <h3>SSG-Com</h3>
     <img src="./static/image/5.png" alt="SSG-Com Overall Architecture">
