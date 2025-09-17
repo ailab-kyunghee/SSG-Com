@@ -94,12 +94,11 @@ SSG-Com is designed to leverage the diverse labels of Endoscapes-SG201.
 1. **Graph Construction**  
    - **Nodes**: Surgical instruments(with Hand identity), Anatomical structures  
    - **Edges**: spatial relations, Surgical action relations  
-2. **Learning**  
-   - Multi-task training with 3 classifiers
-     - Spatial relation classification
-     - Action relation classification
-     - Hand identity classification  
-   - **Total Loss**:  $L_{\text{total}} = L_{\text{LG}} + \lambda_{\text{action}} L_{\text{action}} + \lambda_{\text{hand}} L_{\text{hand}}$
+2. **Multi-task training with 3 classifiers**
+  - Spatial relation classification
+  - Action relation classification
+  - Hand identity classification  
+  - **Total Loss**:  $L_{\text{total}} = L_{\text{LG}} + \lambda_{\text{action}} L_{\text{action}} + \lambda_{\text{hand}} L_{\text{hand}}$
 
 
 
