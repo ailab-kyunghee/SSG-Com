@@ -36,7 +36,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
     <img src="/static/image/2.png" alt="Key Contribution">
   </div>
 
-  <div class="column is-four-fifths">
+  <div class="is-four-fifths">
     <h3>Endoscapes-SG201</h3>
     <h4>Comparison with Datasets</h4>
     <img src="/static/image/3.png" alt="Dataset Comparison">
@@ -49,7 +49,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
     </div>
   </div>
 
-  <div class="column is-four-fifths">
+  <div class="is-four-fifths">
     <h3>SSG-Com</h3>
     <img src="/static/image/5.png" alt="SSG-Com Overall Architecture">
     <div class="content has-text-justified">
@@ -61,16 +61,16 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 </div>
 
 <div class="columns is-centered">
-  <div class="column is-four-fifths">
+  <div class="is-four-fifths">
     <h2>Experimental Results</h2>
   </div>
 
-  <div class="column is-four-fifths">
+  <div class="is-four-fifths">
     <h3>Quantitative Results</h3>
     <img src="/static/image/6.png" alt="Quantitative Results">
     <div class="content has-text-justified">
       <p>
-        Endoscapes-SG20 dataset provides XXX. (여기에 실제 정량적 결과 설명을 작성하세요.)
+        Endoscapes-SG20 dataset provides XXX.
       </p>
     </div>
     <h3>Qualitative Results</h3>
