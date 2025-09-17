@@ -479,7 +479,7 @@ pre {
 }
 body {
   color: #4a4a4a;
-  font-size: 1.4em;
+  font-size: 1.1em;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -1984,7 +1984,7 @@ fieldset[disabled] .button {
   margin-top: 1.1428em;
 }
 .content h3 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin-bottom: 0.6666em;
 }
 .content h3:not(:first-child) {
