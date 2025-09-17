@@ -37,9 +37,11 @@ code: https://github.com/ailab-kyunghee/SSG-Com
   </div>
   <h3>Endoscapes-SG201</h3>
   <img src="./static/image/construction.png">
-</div>
+        <div class="content has-text-justified">
 
-We were fortunate to build Endoscapes-SG201, a dataset for holistic scene graph research, by extending and refining the publicly available [Endoscapes-Bbox201](https://github.com/CAMMA-public/Endoscapes) dataset released by CAMMA.
+  We were fortunate to build Endoscapes-SG201, a dataset for holistic scene graph research, by extending and refining the publicly available <a href="https://github.com/CAMMA-public/Endoscapes">Endoscapes-Bbox201</a> dataset released by CAMMA.
+        </div>
+</div>
 
 To annotate additional labels, two clinical experts from Samsung Medical Center refined the bounding boxes in Endoscapes-Bbox201.
 - **Step 1**: We refined Bounding Boxes from Endoscapes-Bbox201
