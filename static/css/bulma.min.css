@@ -1947,6 +1947,7 @@ fieldset[disabled] .button {
     max-width: 1344px;
   }
 }
+.abstract-title { margin-top: 0; }
 .content li + li {
   margin-top: 0.25em;
 }
