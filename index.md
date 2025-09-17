@@ -23,7 +23,6 @@ code: https://github.com/ailab-kyunghee/SSG-Com
         Surgical scene understanding is crucial for computer-assisted intervention systems, requiring visual comprehension of surgical scenes that involves diverse elements such as surgical tools, anatomical structures, and their interactions. 
         To effectively represent the complex information in surgical scenes, graph-based approaches have been explored to structurally model surgical entities and their relationships. 
         However, aspects such as tool–action–target combinations and the identity of the operating hand remain underexplored. 
-
         To address this, we propose <b>Endoscapes-SG201</b>, a new dataset including annotations for action triplets(tool–action–target) and hand identity. 
         We also introduce <b>SSG-Com</b>, a graph-based method designed to represent these critical elements. 
         Experiments on downstream tasks—Critical View of Safety (CVS) assessment and action triplet recognition—demonstrate the importance of integrating these scene graph components, significantly advancing holistic surgical scene understanding. 
@@ -32,42 +31,51 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 </div>
 
 <div class="columns is-centered">
-    <div class="column is-four-fifths">
-        <h2>Main Contribution</h2>
-        ![Key Contribution](/static/image/2.png)  
+  <div class="column is-four-fifths">
+    <h2>Main Contribution</h2>
+    <img src="/static/image/2.png" alt="Key Contribution">
+  </div>
+
+  <div class="column is-four-fifths">
+    <h3>Endoscapes-SG201</h3>
+    <h4>Comparison with Datasets</h4>
+    <img src="/static/image/3.png" alt="Dataset Comparison">
+    <div class="content has-text-justified">
+      <p>
+        Endoscapes-SG20 dataset provides XXX. 
+      </p>
+      <h4>Endoscapes-SG201 Details</h4>
+      <img src="/static/image/4.png" alt="Endoscapes-SG201 Dataset Details">
     </div>
-    <div class="column is-four-fifths">
-        <h3>Endoscapes-SG201</h3>
-        <h4>Comparison with Datasets</h4>
-        ![Dataset Comparison](/static/image/3.png)  
-        <div class="content has-text-justified">
-        Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20
-        <h4>Endoscapes-SG201 Details</h4>
-        ![Endoscapes-SG201 Dataset Details](/static/image/4.png)  
-        </div>
+  </div>
+
+  <div class="column is-four-fifths">
+    <h3>SSG-Com</h3>
+    <img src="/static/image/5.png" alt="SSG-Com Overall Architecture">
+    <div class="content has-text-justified">
+      <p>
+        SSG-Com dataset introduces XXX. 
+      </p>
     </div>
-    <div class="column is-four-fifths">
-        <h3>SSG-Com</h3>
-        ![SSG-Com Overall Architecture](/static/image/5.png)  
-        <div class="content has-text-justified">
-        SSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-Com
-        </div>
-    </div>
+  </div>
 </div>
 
 <div class="columns is-centered">
-    <div class="column is-four-fifths">
-        <h2>Experimental Results</h2>
+  <div class="column is-four-fifths">
+    <h2>Experimental Results</h2>
+  </div>
+
+  <div class="column is-four-fifths">
+    <h3>Quantitative Results</h3>
+    <img src="/static/image/6.png" alt="Quantitative Results">
+    <div class="content has-text-justified">
+      <p>
+        Endoscapes-SG20 dataset provides XXX. (여기에 실제 정량적 결과 설명을 작성하세요.)
+      </p>
     </div>
-    <div class="column is-four-fifths">
-        <h3>Quantitative Results</h3>
-        ![Quantitative Results](/static/image/6.png)  
-        <div class="content has-text-justified">
-        Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20
-        </div>
-        <h3>Qualitative Results</h3>
-        ![Qualitative Results](/static/image/7.png)  
-    </div>
+    <h3>Qualitative Results</h3>
+    <img src="/static/image/7.png" alt="Qualitative Results">
+  </div>
 </div>
 
 
