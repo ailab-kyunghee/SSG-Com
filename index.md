@@ -18,7 +18,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 <!-- Abstract -->
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-        <h3>Abstract</h3>
+        <h2>Abstract</h2>
         <div class="content has-text-justified">
         Surgical scene understanding is crucial for computer-assisted intervention systems, requiring visual comprehension of surgical scenes that involves diverse elements such as surgical tools, anatomical structures, and their interactions. 
         To effectively represent the complex information in surgical scenes, graph-based approaches have been explored to structurally model surgical entities and their relationships. 
@@ -31,7 +31,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 </div>
 
 <div class="is-centered">
-  <h2>Main Contribution</h2>
+  <h2>Main Contributions</h2>
   <div class="is-four-fifths has-text-centered">
     <img src="./static/image/2.png" alt="Key Contribution">
   </div>

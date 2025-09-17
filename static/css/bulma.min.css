@@ -1982,9 +1982,9 @@ fieldset[disabled] .button {
   margin-bottom: 0.5714em;
 }
 .content h2:not(:first-child) {
-  margin-top: 1.1428em;
 }
 .content h3 {
+  margin-top: 1.6em;
   font-size: 2em;
   margin-bottom: 0.6666em;
 }
@@ -1992,7 +1992,7 @@ fieldset[disabled] .button {
   margin-top: 0.6em;
 }
 .content h4 {
-  margin-top: 0.8em;
+  margin-top: 1.5em;
   font-size: 1.6em;
   margin-bottom: 0.6em;
 }
