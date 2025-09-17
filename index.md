@@ -60,9 +60,9 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 This table presents the category-wise distribution of the additional labels introduced in Endoscapes-SG201.
 
 - **Additional Annotations:**
-  - ""6 Surgical Instruments"": Hook (HK), Grasper (GP), Clipper (CL), Bipolar (BP), Irrigator (IG), Scissors (SC)
-  - ""6 Surgical Actions"": Dissect (Dis.), Retract (Ret.), Grasp (Gr.), Clip (Cl.), Coagulate (Co.), Null
-  - ""3 Hand Identities"": Operator’s Right Hand (Rt), Operator’s Left Hand (Lt), Assistant’s Hand (Assi)
+  - **6 Surgical Instruments**: Hook (HK), Grasper (GP), Clipper (CL), Bipolar (BP), Irrigator (IG), Scissors (SC)
+  - **6 Surgical Actions**: Dissect (Dis.), Retract (Ret.), Grasp (Gr.), Clip (Cl.), Coagulate (Co.), Null
+  - **3 Hand Identities**: Operator’s Right Hand (Rt), Operator’s Left Hand (Lt), Assistant’s Hand (Assi)
 
 
 <div>
@@ -74,11 +74,14 @@ This table presents the category-wise distribution of the additional labels intr
 
 SSG-Com is designed to leverage the diverse labels of Endoscapes-SG201.
 1. **Graph Construction**  
-   - Nodes: Surgical instruments(with Hand identity), Anatomical structures  
-   - Edges: spatial relations, Surgical action relations  
+   - **Nodes**: Surgical instruments(with Hand identity), Anatomical structures  
+   - **Edges**: spatial relations, Surgical action relations  
 2. **Learning**  
-   - Multi-task training with 3 classifiers: Spatial relations, Action relations, Hand identity  
-   - Total Loss: $L_{\text{total}} = L_{\text{LG}} + \lambda_{\text{action}} L_{\text{action}} + \lambda_{\text{hand}} L_{\text{hand}}$
+   - Multi-task training with 3 classifiers
+     - Spatial relation classification
+     - Action relation classification
+     - Hand identity classification  
+   - **Total Loss**:  $L_{\text{total}} = L_{\text{LG}} + \lambda_{\text{action}} L_{\text{action}} + \lambda_{\text{hand}} L_{\text{hand}}$
 
 
 
@@ -103,8 +106,6 @@ SSG-Com is designed to leverage the diverse labels of Endoscapes-SG201.
     <img src="./static/image/7.png" alt="Qualitative Results">
   </div>
 </div>
-
-
 
 <div class="is-centered">
   <div class="is-four-fifths">
