@@ -31,17 +31,18 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 </div>
 
 <div class="is-centered">
-  <div class="is-four-fifths">
-    <h2>Main Contribution</h2>
+  <h2>Main Contribution</h2>
+  <div class="is-four-fifths has-text-centered">
     <img src="https://github.com/user-attachments/assets/66a5ba50-36c8-487a-93d4-65ba6601bbeb" alt="Key Contribution">
   </div>
-
-  <div class="is-four-fifths">
-    <h3>Endoscapes-SG201</h3>
+  <h3>Endoscapes-SG201</h3>
+  <div class="is-four-fifths has-text-centered">
     <img src="https://github.com/user-attachments/assets/c8635b4a-522a-43e6-8ab2-f9f430818fa4" alt="Dataset Construction">
         <div class="content has-text-justified">
         We were fortunate to build Endoscapes-SG201, a dataset for holistic scene graph research, by extending and refining the publicly available Endoscapes-Bbox201 dataset released by CAMMA. Two clinical experts from Samsung Medical Center refined the bounding boxes in Endoscapes-Bbox201, and the original Tool category was subdivided into six distinct classes. In addition, we introduced action labels describing interactions between tools and anatomical structures, as well as Hand Identity labels specifying which hand was manipulating each tool.
         </div>
+  </div>
+      <div class="is-four-fifths has-text-centered">
     <h4>Dataset Comparison</h4>
     <img src="https://github.com/user-attachments/assets/9b5e9706-b23d-457b-b060-6291af6da80a" alt="Dataset Comparison">
     <div class="content has-text-justified">
