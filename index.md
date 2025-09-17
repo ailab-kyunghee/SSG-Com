@@ -39,7 +39,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
   <div class="is-four-fifths has-text-centered">
     <img src="./static/image/construction.png">
         <div class="content has-text-justified">
-        We were fortunate to build Endoscapes-SG201, a dataset for holistic scene graph research, by extending and refining the publicly available Endoscapes-Bbox201 dataset released by CAMMA. Two clinical experts from Samsung Medical Center refined the bounding boxes in Endoscapes-Bbox201, and the original Tool category was subdivided into six distinct classes. In addition, we introduced action labels describing interactions between tools and anatomical structures, as well as Hand Identity labels specifying which hand was manipulating each tool.
+        We were fortunate to build Endoscapes-SG201, a dataset for holistic scene graph research, by extending and refining the publicly available Endoscapes-Bbox201 dataset released by CAMMA. Two clinical experts from Samsung Medical Center refined the bounding boxes in Endoscapes-Bbox201, and the original "Tool" category was subdivided into six distinct classes. In addition, we introduced action labels describing interactions between tools and anatomical structures, as well as Hand Identity labels specifying which hand was manipulating each tool.
         </div>
   </div>
     <h4>Dataset Comparison</h4>
