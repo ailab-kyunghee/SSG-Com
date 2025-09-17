@@ -444,7 +444,7 @@ th:not([align]) {
 }
 html {
   background-color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
