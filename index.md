@@ -58,9 +58,19 @@ code: https://github.com/ailab-kyunghee/SSG-Com
       </p>
     </div>
   </div>
+  </div>
 
-  <div class="is-four-fifths">
-    <h3>SSG-Com</h3>
+- **1,933 frames** from **201 laparoscopic cholecystectomy videos**
+- **Annotations:**
+- 6 surgical tools: Grasper, Hook, Clipper, Bipolar, Irrigator, Scissors
+- 5 anatomical structures
+- 6 surgical actions (Dissect, Retract, Grasp, Clip, Coagulate, Null)
+- 3 hand identities: Operator-Right, Operator-Left, Assistant
+- **Splits:** 1,212 train / 409 val / 312 test frames:contentReference[oaicite:2]{index=2}
+
+<div>
+  <h3>SSG-Com</h3>
+  <div class="is-four-fifths has-text-centered">
     <img src="./static/image/5.png" alt="SSG-Com Overall Architecture">
     <div class="content has-text-justified">
       <p>
@@ -97,25 +107,10 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 </div>
 
 
-## 🚀 Motivation
-Surgical AI systems need a **holistic understanding of surgical scenes**, not just detecting tools and anatomy.  
-Previous scene graph approaches overlooked two key aspects:
-1. **Tool–Action–Target combinations** (e.g., "grasper–retract–gallbladder")  
-2. **Hand identity** (operator’s left/right hand vs. assistant’s hand)
-
-These missing elements are crucial for context-aware modeling in surgical workflows.
-
 ---
 
 ## 📊 Endoscapes-SG201 Dataset
 We construct **Endoscapes-SG201**, built upon Endoscapes-BBox201:
-- **1,933 frames** from **201 laparoscopic cholecystectomy videos**
-- **Annotations:**
-  - 6 surgical tools: Grasper, Hook, Clipper, Bipolar, Irrigator, Scissors
-  - 5 anatomical structures
-  - 6 surgical actions (Dissect, Retract, Grasp, Clip, Coagulate, Null)
-  - 3 hand identities: Operator-Right, Operator-Left, Assistant
-- **Splits:** 1,212 train / 409 val / 312 test frames:contentReference[oaicite:2]{index=2}
 
 *Figure 1: Endoscapes-SG201 construction process.*
 
