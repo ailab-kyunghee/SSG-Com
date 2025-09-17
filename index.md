@@ -39,7 +39,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
   <img src="./static/image/construction.png">
         <div class="content has-text-justified">
 
-  We were fortunate to build Endoscapes-SG201, a dataset for holistic scene graph research, by extending and refining the publicly available <a href="https://github.com/CAMMA-public/Endoscapes">Endoscapes-Bbox201</a> dataset released by CAMMA.
+  We were fortunate to build <a href="https://github.com/ailab-kyunghee/SSG-Com">Endoscapes-SG201</a>, a dataset for holistic scene graph research, by extending and refining the publicly available <a href="https://github.com/CAMMA-public/Endoscapes">Endoscapes-Bbox201</a> dataset released by CAMMA.
         </div>
 </div>
 
@@ -52,11 +52,22 @@ To annotate additional labels, two clinical experts from Samsung Medical Center 
     <h4>Dataset Comparison</h4>
     <div class="is-four-fifths has-text-centered">
     <img src="./static/image/3.png" alt="Dataset Comparison">
-    <div class="content has-text-justified">
-      <p>
-        This table contrasts the datasets used in previous surgical scene graph studies with Endoscapes-SG201. Designed with holistic scene graph research in mind, Endoscapes-SG201 brings together a broad spectrum of tools and anatomical structures as graph nodes, diverse relationships as graph edges, and Hand Identity labels as attributes of the tool nodes. By unifying these elements, the dataset provides a more expressive and comprehensive foundation for modeling surgical scenes.
-      </p>
       </div>
+      </div>
+
+This table contrasts the datasets used in previous surgical scene graph studies with Endoscapes-SG201.
+
+- Endoscapes-SG201 is designed with holistic scene graph research in mind.
+
+- It incorporates:
+  - Diverse tools and anatomical structures as graph nodes.
+  - Diverse relationships as graph edges.
+  - Hand Identity labels as attributes of the tool nodes.
+
+- By unifying these elements, the dataset provides a more expressive and comprehensive foundation for modeling surgical scenes.
+      
+<div class="is-centered">
+    <div class="is-four-fifths has-text-centered">
       <div class="content has-text-justified">
       <h4>Endoscapes-SG201 Details</h4>
       <img src="./static/image/4.png" alt="Endoscapes-SG201 Dataset Details">
