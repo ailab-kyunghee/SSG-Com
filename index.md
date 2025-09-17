@@ -38,23 +38,37 @@ code: https://github.com/ailab-kyunghee/SSG-Com
     </div>
     <div class="column is-four-fifths">
         <h3>Endoscapes-SG201</h3>
+        <h4>Comparison with Datasets</h4>
+        ![Dataset Comparison](/static/image/3.png)  
         <div class="content has-text-justified">
         Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20
+        <h4>Endoscapes-SG201 Details</h4>
+        ![Endoscapes-SG201 Dataset Details](/static/image/4.png)  
         </div>
     </div>
     <div class="column is-four-fifths">
         <h3>SSG-Com</h3>
-                <div class="content has-text-justified">
-        Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20
+        ![SSG-Com Overall Architecture](/static/image/5.png)  
+        <div class="content has-text-justified">
+        SSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-ComSSG-Com
         </div>
     </div>
 </div>
 
-![Dataset Comparison](/static/image/3.png)  
-![Endoscapes-SG201 Dataset Details](/static/image/4.png)  
-![SSG-Com Overall Architecture](/static/image/5.png)  
-![Quantitative Results](/static/image/6.png)  
-![Qualitative Results](/static/image/7.png)  
+<div class="columns is-centered">
+    <div class="column is-four-fifths">
+        <h2>Experimental Results</h2>
+    </div>
+    <div class="column is-four-fifths">
+        <h3>Quantitative Results</h3>
+        ![Quantitative Results](/static/image/6.png)  
+        <div class="content has-text-justified">
+        Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20
+        </div>
+        <h3>Qualitative Results</h3>
+        ![Qualitative Results](/static/image/7.png)  
+    </div>
+</div>
 
 
 ## 🚀 Motivation
