@@ -33,18 +33,18 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 <div class="is-centered">
   <h2>Main Contribution</h2>
   <div class="is-four-fifths has-text-centered">
-    <img src="https://github.com/user-attachments/assets/66a5ba50-36c8-487a-93d4-65ba6601bbeb?download=1" alt="Key Contribution">
+    <img src="./static/image/2.png" alt="Key Contribution">
   </div>
   <h3>Endoscapes-SG201</h3>
   <div class="is-four-fifths has-text-centered">
-    <img src="https://github.com/user-attachments/assets/c8635b4a-522a-43e6-8ab2-f9f430818fa4?download=1" alt="Dataset Construction">
+    <img src="./static/image/construction.png">
         <div class="content has-text-justified">
         We were fortunate to build Endoscapes-SG201, a dataset for holistic scene graph research, by extending and refining the publicly available Endoscapes-Bbox201 dataset released by CAMMA. Two clinical experts from Samsung Medical Center refined the bounding boxes in Endoscapes-Bbox201, and the original Tool category was subdivided into six distinct classes. In addition, we introduced action labels describing interactions between tools and anatomical structures, as well as Hand Identity labels specifying which hand was manipulating each tool.
         </div>
   </div>
     <h4>Dataset Comparison</h4>
     <div class="is-four-fifths has-text-centered">
-    <img src="https://github.com/user-attachments/assets/9b5e9706-b23d-457b-b060-6291af6da80a?download=1" alt="Dataset Comparison">
+    <img src="./static/image/3.png" alt="Dataset Comparison">
     <div class="content has-text-justified">
       <p>
         이 테이블은 그동안 써지컬 씬 그래프 논문들에서 사용해온 데이터셋들과 Endoscapes-SG201 사이의 관
@@ -52,13 +52,13 @@ code: https://github.com/ailab-kyunghee/SSG-Com
       </div>
       <div class="content has-text-justified">
       <h4>Endoscapes-SG201 Details</h4>
-      <img src="https://github.com/user-attachments/assets/539b67e5-762b-4436-a4fc-847ac6dfc6ab?download=1" alt="Endoscapes-SG201 Dataset Details">
+      <img src="./static/image/4.png" alt="Endoscapes-SG201 Dataset Details">
     </div>
   </div>
 
   <div class="is-four-fifths">
     <h3>SSG-Com</h3>
-    <img src="https://github.com/user-attachments/assets/d8214ea0-63c0-43f2-a630-40a33102065d?download=1" alt="SSG-Com Overall Architecture">
+    <img src="./static/image/5.png" alt="SSG-Com Overall Architecture">
     <div class="content has-text-justified">
       <p>
         SSG-Com dataset introduces XXX. 
@@ -74,14 +74,14 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 
   <div class="is-four-fifths">
     <h3>Quantitative Results</h3>
-    <img src="https://github.com/user-attachments/assets/5de2d42a-bcfe-4ebb-9cc0-091691dabddb?download=1" alt="Quantitative Results">
+    <img src="./static/image/6.png" alt="Quantitative Results">
     <div class="content has-text-justified">
       <p>
         Endoscapes-SG20 dataset provides XXX.
       </p>
     </div>
     <h3>Qualitative Results</h3>
-    <img src="https://github.com/user-attachments/assets/cd1c17d0-3b34-4971-b1b4-3841f567119c?download=1" alt="Qualitative Results">
+    <img src="./static/image/7.png" alt="Qualitative Results">
   </div>
 </div>
 
@@ -89,7 +89,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 
 <div class="is-centered">
   <div class="is-four-fifths">
-    <img src="https://github.com/user-attachments/assets/70e6c3a8-672e-4611-907b-717b26b87a49?download=1" alt="Collaborations">
+    <img src="./static/image/8.png" alt="Collaborations">
   </div>
 </div>
 
