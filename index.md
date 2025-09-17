@@ -38,7 +38,8 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 
   <div class="is-four-fifths">
     <h3>Endoscapes-SG201</h3>
-    감사하게도 CAMMA에서 공개해준 CVS 데이터셋인 Endoscapes-Bbox201를 기반으로 홀리스틱 씬 그래프 연구에 적합하도록 annotation을 더하고 수정하였습니다. 
+    <img src="/static/image/construction.png" alt="Dataset Construction">
+    We were fortunate to build Endoscapes-SG201, a dataset for holistic scene graph research, by extending and refining the publicly available Endoscapes-Bbox201 dataset released by CAMMA. Two clinical experts from Samsung Medical Center refined the bounding boxes in Endoscapes-Bbox201, and the original Tool category was subdivided into six distinct classes. In addition, we introduced action labels describing interactions between tools and anatomical structures, as well as Hand Identity labels specifying which hand was manipulating each tool.
     <h4>Dataset Comparison</h4>
     <img src="/static/image/3.png" alt="Dataset Comparison">
     <div class="content has-text-justified">
