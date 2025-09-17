@@ -57,31 +57,40 @@ code: https://github.com/ailab-kyunghee/SSG-Com
   </div>
 </div>
 
-This table shows the category-wise distribution of labels we added to Endoscapes-SG201.
+This table presents the category-wise distribution of the additional labels introduced in Endoscapes-SG201.
 
-- **1,933 frames** from **201 laparoscopic cholecystectomy videos** in original Endoscapes dataset
-- **Annotations:**
-  - 6 Surgical Instruments: Hook(HK), Grasper(GP), Clipper(CL), Bipolar(BP), Irrigator(IG), Scissors(SC)
-  - 6 Surgical Actions: Dissect(Dis.), Retract(Ret.), Grasp(Gr.), Clip(Cl.), Coagulate(Co.), Null
-  - 3 Hand Identity: Operator's Right Hand(Rt), Operator's Left Hand(Lt), Assistant's Hand(Assi)
-- **Splits:** 1,212 train / 409 val / 312 test (frames)
+- **Additional Annotations:**
+- 6 Surgical Instruments: Hook (HK), Grasper (GP), Clipper (CL), Bipolar (BP), Irrigator (IG), Scissors (SC)
+- 6 Surgical Actions: Dissect (Dis.), Retract (Ret.), Grasp (Gr.), Clip (Cl.), Coagulate (Co.), Null
+- 3 Hand Identities: Operator’s Right Hand (Rt), Operator’s Left Hand (Lt), Assistant’s Hand (Assi)
+ategory-wise distribution of labels we added to Endoscapes-SG201.
+
 
 <div>
   <div class="is-four-fifths">
     <h3>SSG-Com</h3>
     <img src="./static/image/5.png" alt="SSG-Com Overall Architecture">
-    <div class="content has-text-justified">
-      <p>
-        SSG-Com은 Endoscapes-SG201의 다양한 label들을 학습시키기 위해 디자인되었습니다. 
-      </p>
-    </div>
   </div>
 </div>
+
+SSG-Com is designed to leverage the diverse labels of Endoscapes-SG201.
+1. **Graph Construction**  
+   - Nodes: Surgical instruments(with Hand identity), Anatomical structures  
+   - Edges: spatial relations, Surgical action relations  
+2. **Learning**  
+   - Multi-task training with 3 classifiers: Spatial relations, Action relations, Hand identity  
+   - Total Loss: $L_{\text{total}} = L_{\text{LG}} + \lambda_{\text{action}} L_{\text{action}} + \lambda_{\text{hand}} L_{\text{hand}}$
+
 
 
 <div class="is-centered">
   <div class="is-four-fifths">
     <h2>Experimental Results</h2>
+        <div class="content has-text-justified">
+      <p>
+      We employed the latent graph to perform two downstream tasks: Action Triplet Recognition and CVS prediction.
+      </p>
+    </div>
   </div>
 
   <div class="is-four-fifths">
@@ -89,7 +98,6 @@ This table shows the category-wise distribution of labels we added to Endoscapes
     <img src="./static/image/6.png" alt="Quantitative Results">
     <div class="content has-text-justified">
       <p>
-        Endoscapes-SG20 dataset provides XXX.
       </p>
     </div>
     <h3>Qualitative Results</h3>
@@ -106,31 +114,7 @@ This table shows the category-wise distribution of labels we added to Endoscapes
 </div>
 
 
----
 
-## 📊 Endoscapes-SG201 Dataset
-We construct **Endoscapes-SG201**, built upon Endoscapes-BBox201:
-
-*Figure 1: Endoscapes-SG201 construction process.*
-
----
-
-## 🧩 Method: SSG-Com
-We propose **SSG-Com (Surgical Scene Graph for Comprehensive Understanding)**:
-1. **Graph Construction**  
-   - Nodes: tools + anatomical structures  
-   - Edges: spatial + surgical action edges  
-   - Additional classifier for **hand identity**
-2. **Learning**  
-   - Multi-task training: spatial relations, action edges, hand identity  
-   - Loss: \(L_{total} = L_{LG} + \lambda_{action} L_{action} + \lambda_{hand} L_{hand}\):contentReference[oaicite:3]{index=3}
-3. **Downstream Tasks**  
-   - **CVS Prediction**  
-   - **Action Triplet Recognition**
-
-*Figure 2: SSG-Com framework.*
-
----
 
 ## 📈 Results
 
