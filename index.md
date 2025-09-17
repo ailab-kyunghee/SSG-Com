@@ -58,19 +58,9 @@ code: https://github.com/ailab-kyunghee/SSG-Com
       </p>
     </div>
   </div>
-  </div>
 
-- **1,933 frames** from **201 laparoscopic cholecystectomy videos**
-- **Annotations:**
-- 6 surgical tools: Grasper, Hook, Clipper, Bipolar, Irrigator, Scissors
-- 5 anatomical structures
-- 6 surgical actions (Dissect, Retract, Grasp, Clip, Coagulate, Null)
-- 3 hand identities: Operator-Right, Operator-Left, Assistant
-- **Splits:** 1,212 train / 409 val / 312 test frames:contentReference[oaicite:2]{index=2}
-
-<div>
-  <h3>SSG-Com</h3>
-  <div class="is-four-fifths has-text-centered">
+  <div class="is-four-fifths">
+    <h3>SSG-Com</h3>
     <img src="./static/image/5.png" alt="SSG-Com Overall Architecture">
     <div class="content has-text-justified">
       <p>
@@ -79,6 +69,14 @@ code: https://github.com/ailab-kyunghee/SSG-Com
     </div>
   </div>
 </div>
+
+- **1,933 frames** from **201 laparoscopic cholecystectomy videos**
+- **Annotations:**
+  - 6 surgical tools: Grasper, Hook, Clipper, Bipolar, Irrigator, Scissors
+  - 5 anatomical structures
+  - 6 surgical actions (Dissect, Retract, Grasp, Clip, Coagulate, Null)
+  - 3 hand identities: Operator-Right, Operator-Left, Assistant
+- **Splits:** 1,212 train / 409 val / 312 test frames:contentReference[oaicite:2]{index=2}
 
 <div class="is-centered">
   <div class="is-four-fifths">
