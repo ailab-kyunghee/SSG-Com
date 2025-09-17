@@ -36,6 +36,18 @@ code: https://github.com/ailab-kyunghee/SSG-Com
         <h2>Main Contribution</h2>
         ![Key Contribution](/static/image/2.png)  
     </div>
+    <div class="column is-four-fifths">
+        <h3>Endoscapes-SG201</h3>
+        <div class="content has-text-justified">
+        Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20
+        </div>
+    </div>
+    <div class="column is-four-fifths">
+        <h3>SSG-Com</h3>
+                <div class="content has-text-justified">
+        Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20Endoscapes-SG20
+        </div>
+    </div>
 </div>
 
 ![Dataset Comparison](/static/image/3.png)  
