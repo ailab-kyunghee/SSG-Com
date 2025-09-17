@@ -108,7 +108,7 @@ SSG-Com is designed to leverage the diverse labels of Endoscapes-SG201.
   </div>
 </div>
       
-We employed the latent graph to perform two downstream tasks.
+The latent graph of SSG-Com demonstrated its effectiveness across two downstream tasks.
 - Action Triplet Recognition
 - CVS prediction
 
@@ -116,16 +116,30 @@ We employed the latent graph to perform two downstream tasks.
   <div class="is-four-fifths">
     <h3>Quantitative Results</h3>
     <img src="./static/image/6.png" alt="Quantitative Results">
-    <div class="content has-text-justified">
-      <p>
-      </p>
-    </div>
-    <h3>Qualitative Results</h3>
-    <img src="./static/image/7.png" alt="Qualitative Results">
   </div>
 </div>
 
+In **Action Triplet Recognition (a):**
+- Modeling action relations as graph edges between nodes improved performance from 18.0 mAP (LG-CVS) to 23.5.
+- Further incorporating Hand Identity increased performance to 24.2.
+
+In **CVS Prediction (b):**
+- Using Endoscapes-SG201 improved the performance of LG-CVS by 0.9 mAP, and SSG-Com achieved the highest score of 64.6.
+
+
 <div class="is-centered">
+  <div class="is-four-fifths">
+    <h3>Qualitative Results</h3>
+    <img src="./static/image/7.png" alt="Qualitative Results">
+        <div class="content has-text-justified">
+    By employing Endoscapes-SG201 and SSG-Com, we demonstrate the ability to construct a richer holistic surgical scene graph compared to existing approaches.
+    </div>
+  </div>
+</div>
+
+
+
+<div class="is-centered ">
   <div class="is-four-fifths">
     <img src="./static/image/8.png" alt="Collaborations">
   </div>
