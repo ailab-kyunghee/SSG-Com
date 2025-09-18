@@ -267,21 +267,21 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
               <b>Edges</b>: Spatial relations, Surgical action relations
             </li>
             <li class="mt-3">
-              <b>Multi-task training with 3 classifiers</b>
-              <ul>
-                <li>Spatial relation classification</li>
-                <li>Action relation classification</li>
-                <li>Hand identity classification</li>
-              </ul>
-              <div class="mt-2">
-                <b>Total Loss</b>: \( L_{\text{total}} = L_{\text{LG}} + \lambda_{\text{action}} L_{\text{action}} + \lambda_{\text{hand}} L_{\text{hand}} \)
+              <b>Multi-task Training (3 classifiers)</b><br>
+              <b>Classifier 1</b>: Spatial relation classification<br>
+              <b>Classifier 2</b>: Action relation classification<br>
+              <b>Classifier 3</b>: Hand identity classification
+              <div class="mt-2 math-block">
+                <b>Total Loss</b>:
+                \[
+                L_{\text{total}} = L_{\text{LG}} + \lambda_{\text{action}} L_{\text{action}} + \lambda_{\text{hand}} L_{\text{hand}}
+                \]
               </div>
             </li>
           </ol>
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
