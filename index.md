@@ -33,7 +33,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 </div>
 
 <div class="is-centered">
-  <h2>Main Contributions</h2>
+  <h1>Main Contributions</h1>
   <div class="is-four-fifths has-text-centered">
     <img src="./static/image/2.png" alt="Key Contribution">
   </div>
@@ -51,7 +51,7 @@ To annotate additional labels, two clinical experts from Samsung Medical Center 
 - **Step 3**: We annotated Action labels which describes interactions between tools and anatomical structures, and Hand Identity labels which specifies which hand is manipulating each tool
 
 <div class="is-centered">
-    <h4>Dataset Comparison</h4>
+    <h3>Dataset Comparison</h3>
     <div class="is-four-fifths has-text-centered">
     <img src="./static/image/3.png" alt="Dataset Comparison">
       </div>
@@ -71,7 +71,7 @@ This table contrasts the datasets used in previous surgical scene graph studies 
 <div class="is-centered">
     <div class="is-four-fifths has-text-centered">
       <div class="content has-text-justified">
-      <h4>Endoscapes-SG201 Details</h4>
+      <h3>Endoscapes-SG201 Details</h3>
       <img src="./static/image/4.png" alt="Endoscapes-SG201 Dataset Details">
     </div>
   </div>
@@ -87,7 +87,7 @@ This table presents the category-wise distribution of the additional labels intr
 
 <div>
   <div class="is-four-fifths">
-    <h3>SSG-Com</h3>
+    <h2>SSG-Com</h2>
     <img src="./static/image/5.png" alt="SSG-Com Overall Architecture">
   </div>
 </div>
@@ -106,7 +106,7 @@ SSG-Com is designed to leverage the diverse labels of Endoscapes-SG201.
 
 <div class="is-centered">
   <div class="is-four-fifths">
-    <h2>Experimental Results</h2>
+    <h1>Experimental Results</h1>
   </div>
 </div>
       
@@ -116,7 +116,7 @@ The latent graph of SSG-Com demonstrated its effectiveness across two downstream
 
 <div class="is-centered">
   <div class="is-four-fifths">
-    <h3>Quantitative Results</h3>
+    <h2>Quantitative Results</h2>
     <img src="./static/image/6.png" alt="Quantitative Results">
   </div>
 </div>
@@ -131,7 +131,7 @@ In **CVS Prediction (b):**
 
 <div class="is-centered">
   <div class="is-four-fifths">
-    <h3>Qualitative Results</h3>
+    <h2>Qualitative Results</h2>
     <img src="./static/image/7.png" alt="Qualitative Results">
         <div class="content has-text-justified">
     By employing Endoscapes-SG201 and SSG-Com, we demonstrate the ability to construct a richer holistic surgical scene graph compared to existing approaches.

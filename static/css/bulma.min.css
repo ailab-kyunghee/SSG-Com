@@ -10539,7 +10539,7 @@ a.has-text-danger-dark:hover {
   padding: 3rem 1.5rem;
 }
 .section {
-  padding: 3rem 1.5rem;
+  padding: 1rem 1.2rem;
 }
 @media screen and (min-width: 1024px) {
   .section.is-medium {
