@@ -10,7 +10,9 @@ affiliations:
     - ¹Department of Surgery, Samsung Medical Center, Seoul 06351, Republic of Korea
     - ²Kyung Hee University, Yongin 17104, Republic of Korea
 paper: https://arxiv.org/pdf/2507.15541
+eposter: https://github.com/user-attachments/files/22401658/SSG.Poster.pdf
 code: https://github.com/ailab-kyunghee/SSG-Com
+
 ---
 
 
