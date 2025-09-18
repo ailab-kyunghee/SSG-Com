@@ -12,155 +12,290 @@ affiliations:
 paper: https://arxiv.org/pdf/2507.15541
 eposter: https://github.com/user-attachments/files/22401658/SSG.Poster.pdf
 code: https://github.com/ailab-kyunghee/SSG-Com
-
 ---
-<style>
 
-/* PC 화면에서 크기 키우기 */
+<!--
+  Bulma 기반 반응형 튜닝 요약:
+  - section/container 사용으로 좌우 폭 제어
+  - is-size-*-mobile/tablet/desktop 로 타이포 반응형
+  - mt-*, mb-* 로 간격 제어 (inline height 제거)
+  - columns 로 이미지/텍스트 폭 반응형
+-->
+
+<style>
+/* 데스크톱에서 본문 가독성을 약간 키우기 */
 @media screen and (min-width: 1024px) {
-  .abstract-section h3 {
-    font-size: 2rem;   /* 기본보다 크게 */
-  }
   .abstract-section .content {
-    font-size: 1.25rem; /* 본문도 약간 키움 */
-    line-height: 1.8;   /* 가독성 */
+    font-size: 1.125rem; /* ~18px */
+    line-height: 1.85;
   }
+}
+
+/* 아주 큰 화면에서 중앙 폭 제한 (가독성) */
+@media screen and (min-width: 1408px) { /* Bulma widescreen+ */
+  .narrow-container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+/* 포스터/이미지 반응형 */
+.figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 버튼 그룹 간격 */
+.link-blocks .button + .button {
+  margin-left: .5rem;
+}
+
+/* 테이블/설명 이미지 아래 여백 통일 */
+.section-figure {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 헤더들 모바일/데스크톱 크기 */
+.h-title { /* 메인 제목 */
+  /* 모바일~데스크톱까지 부드럽게 확대 */
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+}
+.h-subtitle { /* 섹션 타이틀 */
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  font-weight: 700;
+}
+.h-minor { /* 소제목 */
+  font-size: clamp(1.125rem, 1.8vw, 1.375rem);
+  font-weight: 700;
+}
+
+/* 리스트 가독성 */
+.content ul {
+  margin-top: .5rem;
 }
 </style>
 
-![Illustration](/static/image/1.png)  
+<!-- Hero Illustration -->
+<section class="section pt-4 pb-3">
+  <div class="container narrow-container">
+    <figure class="figure section-figure">
+      <img src="/static/image/1.png" alt="Illustration">
+    </figure>
+    <!-- 링크 버튼들 (Paper / Poster / Code) -->
+    <div class="link-blocks has-text-centered mt-4">
+      {% if page.paper %}
+      <a href="{{ page.paper }}" target="_blank" rel="noopener" class="button is-dark is-rounded is-small">
+        <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+      </a>
+      {% endif %}
+      {% if page.eposter %}
+      <a href="{{ page.eposter }}" target="_blank" rel="noopener" class="button is-dark is-rounded is-small">
+        <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Poster</span>
+      </a>
+      {% endif %}
+      {% if page.code %}
+      <a href="{{ page.code }}" target="_blank" rel="noopener" class="button is-link is-rounded is-small">
+        <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
 <!-- Abstract -->
-<div class="columns is-centered has-text-centered abstract-section">
-    <div class="column">
-        <h3>Abstract</h3>
-        <div class="content has-text-justified">
-        Surgical scene understanding is crucial for computer-assisted intervention systems, requiring visual comprehension of surgical scenes that involves diverse elements such as surgical tools, anatomical structures, and their interactions. 
-        To effectively represent the complex information in surgical scenes, graph-based approaches have been explored to structurally model surgical entities and their relationships. 
-        However, aspects such as tool–action–target combinations and the identity of the operating hand remain underexplored. 
-        To address this, we propose <b>Endoscapes-SG201</b>, a new dataset including annotations for action triplets(tool–action–target) and hand identity. 
-        We also introduce <b>SSG-Com</b>, a graph-based method designed to represent these critical elements. 
-        Experiments on downstream tasks—Critical View of Safety (CVS) assessment and action triplet recognition—demonstrate the importance of integrating these scene graph components, significantly advancing holistic surgical scene understanding. 
+<section class="section pt-4 pb-4">
+  <div class="container narrow-container">
+    <div class="columns is-centered has-text-centered abstract-section">
+      <div class="column is-12-tablet is-10-desktop">
+        <h3 class="h-subtitle">Abstract</h3>
+        <div class="content has-text-justified mt-3">
+          Surgical scene understanding is crucial for computer-assisted intervention systems, requiring visual comprehension of surgical scenes that involves diverse elements such as surgical tools, anatomical structures, and their interactions.
+          To effectively represent the complex information in surgical scenes, graph-based approaches have been explored to structurally model surgical entities and their relationships.
+          However, aspects such as tool–action–target combinations and the identity of the operating hand remain underexplored.
+          To address this, we propose <b>Endoscapes-SG201</b>, a new dataset including annotations for action triplets (tool–action–target) and hand identity.
+          We also introduce <b>SSG-Com</b>, a graph-based method designed to represent these critical elements.
+          Experiments on downstream tasks—Critical View of Safety (CVS) assessment and action triplet recognition—demonstrate the importance of integrating these scene graph components, significantly advancing holistic surgical scene understanding.
         </div>
+      </div>
     </div>
-</div>
-<div style="height: 100px;"></div>
-<div class="is-centered">
-  <h1>Main Contributions</h1>
-  <div class="is-four-fifths has-text-centered">
-    <img src="./static/image/2.png" alt="Key Contribution">
   </div>
-  <h3>Endoscapes-SG201</h3>
-  <img src="./static/image/construction.png">
-        <div class="content has-text-justified">
+</section>
 
-  We were fortunate to build <a href="https://github.com/ailab-kyunghee/SSG-Com">Endoscapes-SG201</a>, a dataset for holistic scene graph research, by extending and refining the publicly available <a href="https://github.com/CAMMA-public/Endoscapes">Endoscapes-Bbox201</a> dataset released by CAMMA.
+<!-- Main Contributions -->
+<section class="section pt-5 pb-5">
+  <div class="container narrow-container">
+    <div class="has-text-centered">
+      <h1 class="h-title">Main Contributions</h1>
+    </div>
+    <div class="columns is-centered mt-4">
+      <div class="column is-12-tablet is-10-desktop has-text-centered">
+        <figure class="figure section-figure">
+          <img src="./static/image/2.png" alt="Key Contribution">
+        </figure>
+        <h3 class="h-minor mt-5">Endoscapes-SG201</h3>
+        <figure class="figure section-figure">
+          <img src="./static/image/construction.png" alt="Construction">
+        </figure>
+        <div class="content has-text-justified">
+          We were fortunate to build <a href="https://github.com/ailab-kyunghee/SSG-Com" target="_blank" rel="noopener">Endoscapes-SG201</a>, a dataset for holistic scene graph research, by extending and refining the publicly available <a href="https://github.com/CAMMA-public/Endoscapes" target="_blank" rel="noopener">Endoscapes-Bbox201</a> dataset released by CAMMA.
         </div>
-</div>
-
-To annotate additional labels, two clinical experts from Samsung Medical Center refined the bounding boxes in Endoscapes-Bbox201.
-- **Step 1**: We refined Bounding Boxes from Endoscapes-Bbox201
-- **Step 2**: We subdivided the 'Tool' class into 6 classes
-- **Step 3**: We annotated Action labels which describes interactions between tools and anatomical structures, and Hand Identity labels which specifies which hand is manipulating each tool
-<div style="height: 50px;"></div>
-<div class="is-centered">
-    <h3>Dataset Comparison</h3>
-    <div class="is-four-fifths has-text-centered">
-    <img src="./static/image/3.png" alt="Dataset Comparison">
       </div>
-      </div>
-
-This table contrasts the datasets used in previous surgical scene graph studies with Endoscapes-SG201.
-
-- Endoscapes-SG201 is designed with holistic scene graph research in mind.
-
-- It incorporates:
-  - Diverse tools and anatomical structures as graph nodes.
-  - Diverse relationships as graph edges.
-  - Hand Identity labels as attributes of the tool nodes.
-
-- By unifying these elements, the dataset provides a more expressive and comprehensive foundation for modeling surgical scenes.
-      
-<div style="height: 50px;"></div>
-<div class="is-centered">
-    <div class="is-four-fifths has-text-centered">
-      <div class="content has-text-justified">
-      <h3>Endoscapes-SG201 Details</h3>
-      <img src="./static/image/4.png" alt="Endoscapes-SG201 Dataset Details">
+    </div>
+    <div class="content mt-4">
+      <p>To annotate additional labels, two clinical experts from Samsung Medical Center refined the bounding boxes in Endoscapes-Bbox201.</p>
+      <ul>
+        <li><b>Step 1</b>: We refined Bounding Boxes from Endoscapes-Bbox201</li>
+        <li><b>Step 2</b>: We subdivided the 'Tool' class into 6 classes</li>
+        <li><b>Step 3</b>: We annotated Action labels (tool–structure interactions) and Hand Identity labels (which hand manipulates each tool)</li>
+      </ul>
     </div>
   </div>
-</div>
+</section>
 
-This table presents the category-wise distribution of the additional labels introduced in Endoscapes-SG201.
-
-**Additional Annotations:**
-- **6 Surgical Instruments**: Hook (HK), Grasper (GP), Clipper (CL), Bipolar (BP), Irrigator (IG), Scissors (SC)
-- **6 Surgical Actions**: Dissect (Dis.), Retract (Ret.), Grasp (Gr.), Clip (Cl.), Coagulate (Co.), Null
-- **3 Hand Identities**: Operator’s Right Hand (Rt), Operator’s Left Hand (Lt), Assistant’s Hand (Assi)
-
-
-<div style="height: 80px;"></div>
-<div>
-  <div class="is-four-fifths">
-    <h2>SSG-Com</h2>
-    <img src="./static/image/5.png" alt="SSG-Com Overall Architecture">
-  </div>
-</div>
-
-<div style="height: 100px;"></div>
-SSG-Com is designed to leverage the diverse labels of Endoscapes-SG201.
-1. **Graph Construction**  
-   - **Nodes**: Surgical instruments(with Hand identity), Anatomical structures  
-   - **Edges**: spatial relations, Surgical action relations  
-2. **Multi-task training with 3 classifiers**
-  - Spatial relation classification
-  - Action relation classification
-  - Hand identity classification  
-  - **Total Loss**:  $L_{\text{total}} = L_{\text{LG}} + \lambda_{\text{action}} L_{\text{action}} + \lambda_{\text{hand}} L_{\text{hand}}$
-
-
-
-<div class="is-centered">
-  <div class="is-four-fifths">
-    <h1>Experimental Results</h1>
-  </div>
-</div>
-      
-The latent graph of SSG-Com demonstrated its effectiveness across two downstream tasks.
-- Action Triplet Recognition
-- CVS prediction
-<div style="height: 50px;"></div>
-
-<div class="is-centered">
-  <div class="is-four-fifths">
-    <h2>Quantitative Results</h2>
-    <img src="./static/image/6.png" alt="Quantitative Results">
-  </div>
-</div>
-
-In **Action Triplet Recognition (a):**
-- Modeling action relations as graph edges between nodes improved performance from 18.0 mAP (LG-CVS) to 23.5.
-- Further incorporating Hand Identity increased performance to 24.2.
-
-In **CVS Prediction (b):**
-- Using Endoscapes-SG201 improved the performance of LG-CVS by 0.9 mAP, and SSG-Com achieved the highest score of 64.6.
-
-<div style="height: 50px;"></div>
-
-<div class="is-centered">
-  <div class="is-four-fifths">
-    <h2>Qualitative Results</h2>
-    <img src="./static/image/7.png" alt="Qualitative Results">
+<!-- Dataset Comparison -->
+<section class="section pt-4 pb-5">
+  <div class="container narrow-container">
+    <div class="has-text-centered">
+      <h3 class="h-subtitle">Dataset Comparison</h3>
+    </div>
+    <div class="columns is-centered mt-3">
+      <div class="column is-12-tablet is-10-desktop has-text-centered">
+        <figure class="figure section-figure">
+          <img src="./static/image/3.png" alt="Dataset Comparison">
+        </figure>
         <div class="content has-text-justified">
-    By employing Endoscapes-SG201 and SSG-Com, we demonstrate the ability to construct a richer holistic surgical scene graph compared to existing approaches.
+          <p>This table contrasts the datasets used in previous surgical scene graph studies with Endoscapes-SG201.</p>
+          <ul>
+            <li>Endoscapes-SG201 is designed with holistic scene graph research in mind.</li>
+            <li>It incorporates:
+              <ul>
+                <li>Diverse tools and anatomical structures as graph nodes.</li>
+                <li>Diverse relationships as graph edges.</li>
+                <li>Hand Identity labels as attributes of the tool nodes.</li>
+              </ul>
+            </li>
+            <li>By unifying these elements, the dataset provides a more expressive and comprehensive foundation for modeling surgical scenes.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-
-<div style="height: 300px;"></div>
-
-<div class="is-centered ">
-  <div class="is-four-fifths">
-    <img src="./static/image/8.png" alt="Collaborations">
+<!-- Endoscapes-SG201 Details -->
+<section class="section pt-4 pb-5">
+  <div class="container narrow-container">
+    <div class="columns is-centered">
+      <div class="column is-12-tablet is-10-desktop has-text-centered">
+        <h3 class="h-subtitle">Endoscapes-SG201 Details</h3>
+        <figure class="figure section-figure">
+          <img src="./static/image/4.png" alt="Endoscapes-SG201 Dataset Details">
+        </figure>
+        <div class="content has-text-justified">
+          <p>This table presents the category-wise distribution of the additional labels introduced in Endoscapes-SG201.</p>
+          <p><b>Additional Annotations:</b></p>
+          <ul>
+            <li><b>6 Surgical Instruments</b>: Hook (HK), Grasper (GP), Clipper (CL), Bipolar (BP), Irrigator (IG), Scissors (SC)</li>
+            <li><b>6 Surgical Actions</b>: Dissect (Dis.), Retract (Ret.), Grasp (Gr.), Clip (Cl.), Coagulate (Co.), Null</li>
+            <li><b>3 Hand Identities</b>: Operator’s Right Hand (Rt), Operator’s Left Hand (Lt), Assistant’s Hand (Assi)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
+<!-- SSG-Com -->
+<section class="section pt-5 pb-5">
+  <div class="container narrow-container">
+    <div class="columns is-centered">
+      <div class="column is-12-tablet is-10-desktop has-text-centered">
+        <h2 class="h-title">SSG-Com</h2>
+        <figure class="figure section-figure">
+          <img src="./static/image/5.png" alt="SSG-Com Overall Architecture">
+        </figure>
+      </div>
+    </div>
+    <div class="content">
+      <p><b>SSG-Com</b> is designed to leverage the diverse labels of Endoscapes-SG201.</p>
+      <ol>
+        <li><b>Graph Construction</b><br>
+          <b>Nodes</b>: Surgical instruments (with Hand identity), Anatomical structures<br>
+          <b>Edges</b>: Spatial relations, Surgical action relations
+        </li>
+        <li class="mt-3"><b>Multi-task training with 3 classifiers</b>
+          <ul>
+            <li>Spatial relation classification</li>
+            <li>Action relation classification</li>
+            <li>Hand identity classification</li>
+          </ul>
+          <div class="mt-2">
+            <b>Total Loss</b>: \( L_{\text{total}} = L_{\text{LG}} + \lambda_{\text{action}} L_{\text{action}} + \lambda_{\text{hand}} L_{\text{hand}} \)
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- Experimental Results -->
+<section class="section pt-5 pb-4">
+  <div class="container narrow-container">
+    <div class="has-text-centered">
+      <h1 class="h-title">Experimental Results</h1>
+    </div>
+    <div class="content mt-3">
+      <p>The latent graph of SSG-Com demonstrated its effectiveness across two downstream tasks.</p>
+      <ul>
+        <li>Action Triplet Recognition</li>
+        <li>CVS prediction</li>
+      </ul>
+    </div>
+    <div class="columns is-centered mt-4">
+      <div class="column is-12-tablet is-10-desktop has-text-centered">
+        <h2 class="h-subtitle">Quantitative Results</h2>
+        <figure class="figure section-figure">
+          <img src="./static/image/6.png" alt="Quantitative Results">
+        </figure>
+        <div class="content has-text-justified">
+          <p><b>In Action Triplet Recognition (a):</b></p>
+          <ul>
+            <li>Modeling action relations as graph edges between nodes improved performance from 18.0 mAP (LG-CVS) to 23.5.</li>
+            <li>Further incorporating Hand Identity increased performance to 24.2.</li>
+          </ul>
+          <p class="mt-3"><b>In CVS Prediction (b):</b></p>
+          <ul>
+            <li>Using Endoscapes-SG201 improved the performance of LG-CVS by 0.9 mAP, and SSG-Com achieved the highest score of 64.6.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered mt-5">
+      <div class="column is-12-tablet is-10-desktop has-text-centered">
+        <h2 class="h-subtitle">Qualitative Results</h2>
+        <figure class="figure section-figure">
+          <img src="./static/image/7.png" alt="Qualitative Results">
+        </figure>
+        <div class="content has-text-justified">
+          By employing Endoscapes-SG201 and SSG-Com, we demonstrate the ability to construct a richer holistic surgical scene graph compared to existing approaches.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Collaborations -->
+<section class="section pt-5 pb-6">
+  <div class="container narrow-container">
+    <div class="columns is-centered">
+      <div class="column is-12-tablet is-10-desktop has-text-centered">
+        <figure class="figure section-figure">
+          <img src="./static/image/8.png" alt="Collaborations">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
