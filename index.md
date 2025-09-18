@@ -15,7 +15,7 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
 ---
 
 <style>
-/* --- Desktop 확대 설정 --- */
+/* --- Desktop 확대/모바일 풀폭 설정 --- */
 
 /* 데스크톱(≥1216px): 본문 폭 살짝 확대 */
 @media screen and (min-width: 1216px) {
@@ -33,19 +33,36 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
   }
 }
 
-/* 모든 컨텐츠 블록의 기본 폰트(데스크톱에서 크게) */
+/* 데스크톱에서 기본 폰트 크게 */
 @media screen and (min-width: 1024px) {
+  body { overflow-x: hidden; } /* 히어로 이미지 1.2배로 키워도 가로 스크롤 방지 */
   .narrow-container .content {
-    font-size: 1.2rem;   /* 기존 ~1.125 → 1.2 */
-    line-height: 1.9;    /* 기존 1.85 → 1.9 */
+    font-size: 1.2rem;
+    line-height: 1.9;
+  }
+  /* PC: 히어로(1.png)만 1.2배 */
+  .figure-hero img {
+    transform: scale(1.2);
+    transform-origin: center;
+    will-change: transform;
   }
 }
 
-/* 이미지 반응형 (컨테이너 확대에 따라 자동으로 커짐) */
+/* 기본 이미지 반응형 */
 .figure img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* 모바일(≤768px): 이미지 거의 풀폭(양쪽 1rem 여백) */
+@media screen and (max-width: 768px) {
+  .figure img {
+    width: calc(100vw - 2rem) !important; /* 컨테이너 폭과 무관하게 화면 가득 */
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* 버튼 그룹 간격 */
@@ -61,15 +78,15 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
 
 /* 제목들: PC에서 더 크게 보이도록 상한 확대 */
 .h-title { /* 메인 제목 */
-  font-size: clamp(1.75rem, 3.2vw, 2.75rem); /* max 2.25 → 2.75 */
+  font-size: clamp(1.75rem, 3.2vw, 2.75rem);
   font-weight: 700;
 }
 .h-subtitle { /* 섹션 제목 */
-  font-size: clamp(1.35rem, 2.4vw, 2.125rem); /* max 1.75 → 2.125 */
+  font-size: clamp(1.35rem, 2.4vw, 2.125rem);
   font-weight: 700;
 }
 .h-minor { /* 소제목 */
-  font-size: clamp(1.2rem, 2vw, 1.625rem); /* max 1.375 → 1.625 */
+  font-size: clamp(1.2rem, 2vw, 1.625rem);
   font-weight: 700;
 }
 </style>
@@ -77,15 +94,14 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
 <!-- Hero Illustration + 링크 버튼 -->
 <section class="section pt-4 pb-3">
   <div class="container narrow-container">
-
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
-        <figure class="figure section-figure">
+        <!-- 첫 이미지에 figure-hero 클래스 추가 -->
+        <figure class="figure section-figure figure-hero">
           <img src="./static/image/1.png" alt="Illustration">
         </figure>
       </div>
     </div>
-
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop">
         <div class="link-blocks has-text-centered mt-4">
@@ -96,7 +112,7 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
           </a>
           {% endif %}
           {% if page.eposter_url %}
-          <a href="{{ page.eposter_url }}" target="_blank" rel="noopener"
+          <a href="./static/pdf/miccai25_ssg-com_poster.pdf" target="_blank" rel="noopener"
              class="button is-dark is-rounded is-medium">
             <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Poster</span>
           </a>
@@ -136,24 +152,20 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
 <!-- Main Contributions -->
 <section class="section pt-5 pb-5">
   <div class="container narrow-container">
-
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <h1 class="h-title">Main Contributions</h1>
       </div>
     </div>
-
     <div class="columns is-centered mt-4">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <figure class="figure section-figure">
           <img src="./static/image/2.png" alt="Key Contribution">
         </figure>
-
         <h3 class="h-minor mt-5">Endoscapes-SG201</h3>
         <figure class="figure section-figure">
           <img src="./static/image/construction.png" alt="Construction">
         </figure>
-
         <div class="content has-text-justified">
           <p>
             We were fortunate to build <a href="https://github.com/ailab-kyunghee/SSG-Com" target="_blank" rel="noopener">Endoscapes-SG201</a>, a dataset for holistic scene graph research, by extending and refining the publicly available <a href="https://github.com/CAMMA-public/Endoscapes" target="_blank" rel="noopener">Endoscapes-Bbox201</a> dataset released by CAMMA.
@@ -167,20 +179,17 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
 <!-- Dataset Comparison -->
 <section class="section pt-4 pb-5">
   <div class="container narrow-container">
-
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <h3 class="h-subtitle">Dataset Comparison</h3>
       </div>
     </div>
-
     <div class="columns is-centered mt-3">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <figure class="figure section-figure">
@@ -202,20 +211,17 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
 <!-- Endoscapes-SG201 Details -->
 <section class="section pt-4 pb-5">
   <div class="container narrow-container">
-
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <h3 class="h-subtitle">Endoscapes-SG201 Details</h3>
       </div>
     </div>
-
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <figure class="figure section-figure">
@@ -232,20 +238,17 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
 <!-- SSG-Com -->
 <section class="section pt-5 pb-5">
   <div class="container narrow-container">
-
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <h2 class="h-title">SSG-Com</h2>
       </div>
     </div>
-
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <figure class="figure section-figure">
@@ -253,7 +256,6 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
         </figure>
       </div>
     </div>
-
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop">
         <div class="content has-text-justified">
@@ -286,13 +288,11 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
 <!-- Experimental Results -->
 <section class="section pt-5 pb-4">
   <div class="container narrow-container">
-
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <h1 class="h-title">Experimental Results</h1>
       </div>
     </div>
-
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop">
         <div class="content mt-3">
@@ -304,7 +304,6 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
         </div>
       </div>
     </div>
-
     <div class="columns is-centered mt-4">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <h2 class="h-subtitle">Quantitative Results</h2>
@@ -324,7 +323,6 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
         </div>
       </div>
     </div>
-
     <div class="columns is-centered mt-5">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <h2 class="h-subtitle">Qualitative Results</h2>
