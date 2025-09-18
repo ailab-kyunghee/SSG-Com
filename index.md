@@ -379,6 +379,11 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
         <div class="figure section-figure">
           <img src="./static/image/8.png" alt="Collaborations">
         </div>
+        <div class="content has-text-centered">
+          <p class="is-size-7 has-text-grey mt-2">
+            The authors thank Ms. Haeun Kim, M.F.A., for her professional assistance with the illustrations in this work.
+          </p>
+        </div>
       </div>
     </div>
   </div>
