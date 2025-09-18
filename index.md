@@ -14,11 +14,23 @@ eposter: https://github.com/user-attachments/files/22401658/SSG.Poster.pdf
 code: https://github.com/ailab-kyunghee/SSG-Com
 
 ---
+<style>
 
+/* PC 화면에서 크기 키우기 */
+@media screen and (min-width: 1024px) {
+  .abstract-section h3 {
+    font-size: 2rem;   /* 기본보다 크게 */
+  }
+  .abstract-section .content {
+    font-size: 1.25rem; /* 본문도 약간 키움 */
+    line-height: 1.8;   /* 가독성 */
+  }
+}
+</style>
 
 ![Illustration](/static/image/1.png)  
 <!-- Abstract -->
-<div class="columns is-centered has-text-centered">
+<div class="columns is-centered has-text-centered abstract-section">
     <div class="column">
         <h3>Abstract</h3>
         <div class="content has-text-justified">
