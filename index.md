@@ -120,9 +120,9 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <!-- 첫 이미지에 figure-hero 클래스 추가 -->
-        <figure class="figure section-figure figure-hero">
+        <div class="figure section-figure figure-hero">
           <img src="./static/image/1.png" alt="Illustration">
-        </figure>
+        </div>
       </div>
     </div>
     <div class="columns is-centered">
@@ -190,13 +190,13 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
     </div>
     <div class="columns is-centered mt-4">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
-        <figure class="figure section-figure">
+        <div class="figure section-figure">
           <img src="./static/image/2.png" alt="Key Contribution">
-        </figure>
+        </div>
         <h2 class="h-title">Endoscapes-SG201</h2>
-        <figure class="figure section-figure">
+        <div class="figure section-figure">
           <img src="./static/image/construction.png" alt="Construction">
-        </figure>
+        </div>
         <div class="content has-text-justified">
           <p>
             We were fortunate to build <a href="https://github.com/ailab-kyunghee/SSG-Com" target="_blank" rel="noopener">Endoscapes-SG201</a>, a dataset for holistic scene graph research, by extending and refining the publicly available <a href="https://github.com/CAMMA-public/Endoscapes" target="_blank" rel="noopener">Endoscapes-Bbox201</a> dataset released by CAMMA.
@@ -223,9 +223,9 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
     </div>
     <div class="columns is-centered mt-3">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
-        <figure class="figure section-figure">
+        <div class="figure section-figure">
           <img src="./static/image/3.png" alt="Dataset Comparison">
-        </figure>
+        </div>
         <div class="content has-text-justified">
           <p>This table contrasts the datasets used in previous surgical scene graph studies with Endoscapes-SG201.</p>
           <ul>
@@ -255,9 +255,9 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
     </div>
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
-        <figure class="figure section-figure">
+        <div class="figure section-figure">
           <img src="./static/image/4.png" alt="Endoscapes-SG201 Dataset Details">
-        </figure>
+        </div>
         <div class="content has-text-justified">
           <p>This table presents the category-wise distribution of the additional labels introduced in Endoscapes-SG201.</p>
           <p><b>Additional Annotations:</b></p>
@@ -282,9 +282,9 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
     </div>
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
-        <figure class="figure section-figure">
+        <div class="figure section-figure">
           <img src="./static/image/5.png" alt="SSG-Com Overall Architecture">
-        </figure>
+        </div>
       </div>
     </div>
     <div class="columns is-centered">
@@ -340,9 +340,9 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
     <div class="columns is-centered mt-4">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <h2 class="h-subtitle">Quantitative Results</h2>
-        <figure class="figure section-figure">
+        <div class="figure section-figure">
           <img src="./static/image/6.png" alt="Quantitative Results">
-        </figure>
+        </div>
         <div class="content has-text-justified">
           <p><b>In Action Triplet Recognition (a):</b></p>
           <ul>
@@ -359,9 +359,9 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
     <div class="columns is-centered mt-5">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <h2 class="h-subtitle">Qualitative Results</h2>
-        <figure class="figure section-figure">
+        <div class="figure section-figure">
           <img src="./static/image/7.png" alt="Qualitative Results">
-        </figure>
+        </div>
         <div class="content has-text-justified">
           By employing Endoscapes-SG201 and SSG-Com, we demonstrate the ability to construct a richer holistic surgical scene graph compared to existing approaches.
         </div>
@@ -376,9 +376,9 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
   <div class="container narrow-container">
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
-        <figure class="figure section-figure">
+        <div class="figure section-figure">
           <img src="./static/image/8.png" alt="Collaborations">
-        </figure>
+        </div>
       </div>
     </div>
   </div>
