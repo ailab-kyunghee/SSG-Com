@@ -55,13 +55,36 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
   display: block;
 }
 
-/* 모바일(≤768px): 이미지 거의 풀폭(양쪽 1rem 여백) */
+/* 모바일(≤768px): 이미지 중앙 + 부모 폭 100%만 사용 */
 @media screen and (max-width: 768px) {
+  .figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .figure img {
-    width: calc(100vw - 2rem) !important; /* 컨테이너 폭과 무관하게 화면 가득 */
-    max-width: none;
+    width: 100% !important;   /* 부모(컬럼) 너비만 사용 */
+    max-width: 100% !important;
+    display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;       /* 확실한 중앙 정렬 */
+  }
+  .link-blocks .button.is-medium {
+    font-size: 0.875rem;   /* 텍스트 크기 축소 */
+    height: 2.25em;        /* 버튼 높이 축소 */
+    padding-left: 1em;     /* 좌우 패딩 축소 */
+    padding-right: 1em;
+    border-radius: 9999px; /* pill 유지 */
+  }
+  /* 아이콘이 너무 크면 약간만 축소 */
+  .link-blocks .button.is-medium .icon {
+    font-size: 0.95em;
+  }
+  /* 버튼이 1줄에 꽉 차면 줄바꿈 허용(선택) */
+  .link-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
   }
 }
 
@@ -148,6 +171,8 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
     </div>
   </div>
 </section>
+
+---
 
 <!-- Main Contributions -->
 <section class="section pt-5 pb-5">
@@ -284,6 +309,8 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
     </div>
   </div>
 </section>
+
+---
 
 <!-- Experimental Results -->
 <section class="section pt-5 pb-4">
