@@ -162,7 +162,7 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
         <figure class="figure section-figure">
           <img src="./static/image/2.png" alt="Key Contribution">
         </figure>
-        <h3 class="h-minor mt-5">Endoscapes-SG201</h3>
+        <h2 class="h-title">Endoscapes-SG201</h2>
         <figure class="figure section-figure">
           <img src="./static/image/construction.png" alt="Construction">
         </figure>
