@@ -2041,7 +2041,7 @@ fieldset[disabled] .button {
   font-size: 0.75rem;
 }
 .content.is-medium {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
 }
 .content.is-large {
   font-size: 1.5rem;
@@ -6379,7 +6379,7 @@ label.panel-block:hover {
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  padding: 2.5rem 2rem 0rem;
+  padding: 2rem 0.5rem 0rem;
 }
 .columns.is-mobile > .column.is-narrow {
   flex: none;
