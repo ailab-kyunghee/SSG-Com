@@ -4,11 +4,11 @@ permalink: /
 
 title: "[MICCAI 2025] Towards Holistic Surgical Scene Graph"
 authors:
-    - Jongmin Shin*¹, Enki Cho*², Ka Young Kim*²,
-    - Jung Yong Kim¹, Seong Tae Kim†², Namkee Oh†¹
+  - Jongmin Shin*¹, Enki Cho*², Ka Young Kim*²,
+  - Jung Yong Kim¹, Seong Tae Kim†², Namkee Oh†¹
 affiliations:
-    - ¹Department of Surgery, Samsung Medical Center, Seoul 06351, Republic of Korea
-    - ²Kyung Hee University, Yongin 17104, Republic of Korea
+  - ¹Department of Surgery, Samsung Medical Center, Seoul 06351, Republic of Korea
+  - ²Kyung Hee University, Yongin 17104, Republic of Korea
 paper: https://arxiv.org/pdf/2507.15541
 eposter: https://github.com/user-attachments/files/22401658/SSG.Poster.pdf
 code: https://github.com/ailab-kyunghee/SSG-Com
@@ -23,7 +23,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 -->
 
 <style>
-/* 데스크톱에서 본문 가독성을 약간 키우기 */
+/* 데스크톱에서 본문 가독성 약간 키우기 */
 @media screen and (min-width: 1024px) {
   .abstract-section .content {
     font-size: 1.125rem; /* ~18px */
@@ -39,7 +39,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
   }
 }
 
-/* 포스터/이미지 반응형 */
+/* 이미지 반응형 */
 .figure img {
   width: 100%;
   height: auto;
@@ -51,15 +51,14 @@ code: https://github.com/ailab-kyunghee/SSG-Com
   margin-left: .5rem;
 }
 
-/* 테이블/설명 이미지 아래 여백 통일 */
+/* 공용 이미지 여백 */
 .section-figure {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
 
-/* 헤더들 모바일/데스크톱 크기 */
+/* 헤더 크기 */
 .h-title { /* 메인 제목 */
-  /* 모바일~데스크톱까지 부드럽게 확대 */
   font-size: clamp(1.5rem, 3vw, 2.25rem);
   font-weight: 700;
 }
@@ -71,45 +70,50 @@ code: https://github.com/ailab-kyunghee/SSG-Com
   font-size: clamp(1.125rem, 1.8vw, 1.375rem);
   font-weight: 700;
 }
-
-/* 리스트 가독성 */
-.content ul {
-  margin-top: .5rem;
-}
 </style>
 
-<!-- Hero Illustration -->
+<!-- Hero Illustration + 링크 버튼 -->
 <section class="section pt-4 pb-3">
   <div class="container narrow-container">
-    <figure class="figure section-figure">
-      <img src="/static/image/1.png" alt="Illustration">
-    </figure>
-    <!-- 링크 버튼들 (Paper / Poster / Code) -->
-    <div class="link-blocks has-text-centered mt-4">
-      {% if page.paper %}
-      <a href="{{ page.paper }}" target="_blank" rel="noopener" class="button is-dark is-rounded is-small">
-        <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
-      </a>
-      {% endif %}
-      {% if page.eposter %}
-      <a href="{{ page.eposter }}" target="_blank" rel="noopener" class="button is-dark is-rounded is-small">
-        <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Poster</span>
-      </a>
-      {% endif %}
-      {% if page.code %}
-      <a href="{{ page.code }}" target="_blank" rel="noopener" class="button is-link is-rounded is-small">
-        <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
-      </a>
-      {% endif %}
+
+    <div class="columns is-centered">
+      <div class="column is-12-tablet is-10-desktop has-text-centered">
+        <figure class="figure section-figure">
+          <img src="./static/image/1.png" alt="Illustration">
+        </figure>
+      </div>
     </div>
+
+    <div class="columns is-centered">
+      <div class="column is-12-tablet is-10-desktop">
+        <div class="link-blocks has-text-centered mt-4">
+          {% if page.paper %}
+          <a href="{{ page.paper }}" target="_blank" rel="noopener" class="button is-dark is-rounded is-small">
+            <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+          </a>
+          {% endif %}
+          {% if page.eposter %}
+          <a href="{{ page.eposter }}" target="_blank" rel="noopener" class="button is-dark is-rounded is-small">
+            <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Poster</span>
+          </a>
+          {% endif %}
+          {% if page.code %}
+          <a href="{{ page.code }}" target="_blank" rel="noopener" class="button is-link is-rounded is-small">
+            <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <!-- Abstract -->
 <section class="section pt-4 pb-4">
   <div class="container narrow-container">
-    <div class="columns is-centered has-text-centered abstract-section">
-      <div class="column is-12-tablet is-10-desktop">
+    <div class="columns is-centered abstract-section">
+      <div class="column is-12-tablet is-10-desktop has-text-centered">
         <h3 class="h-subtitle">Abstract</h3>
         <div class="content has-text-justified mt-3">
           Surgical scene understanding is crucial for computer-assisted intervention systems, requiring visual comprehension of surgical scenes that involves diverse elements such as surgical tools, anatomical structures, and their interactions.
@@ -127,40 +131,51 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 <!-- Main Contributions -->
 <section class="section pt-5 pb-5">
   <div class="container narrow-container">
-    <div class="has-text-centered">
-      <h1 class="h-title">Main Contributions</h1>
+
+    <div class="columns is-centered">
+      <div class="column is-12-tablet is-10-desktop has-text-centered">
+        <h1 class="h-title">Main Contributions</h1>
+      </div>
     </div>
+
     <div class="columns is-centered mt-4">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <figure class="figure section-figure">
           <img src="./static/image/2.png" alt="Key Contribution">
         </figure>
+
         <h3 class="h-minor mt-5">Endoscapes-SG201</h3>
         <figure class="figure section-figure">
           <img src="./static/image/construction.png" alt="Construction">
         </figure>
+
         <div class="content has-text-justified">
-          We were fortunate to build <a href="https://github.com/ailab-kyunghee/SSG-Com" target="_blank" rel="noopener">Endoscapes-SG201</a>, a dataset for holistic scene graph research, by extending and refining the publicly available <a href="https://github.com/CAMMA-public/Endoscapes" target="_blank" rel="noopener">Endoscapes-Bbox201</a> dataset released by CAMMA.
+          <p>
+            We were fortunate to build <a href="https://github.com/ailab-kyunghee/SSG-Com" target="_blank" rel="noopener">Endoscapes-SG201</a>, a dataset for holistic scene graph research, by extending and refining the publicly available <a href="https://github.com/CAMMA-public/Endoscapes" target="_blank" rel="noopener">Endoscapes-Bbox201</a> dataset released by CAMMA.
+            To annotate additional labels, two clinical experts from Samsung Medical Center refined the bounding boxes in Endoscapes-Bbox201.
+          </p>
+          <ul>
+            <li><b>Step 1</b>: We refined Bounding Boxes from Endoscapes-Bbox201</li>
+            <li><b>Step 2</b>: We subdivided the 'Tool' class into 6 classes</li>
+            <li><b>Step 3</b>: We annotated Action labels (tool–structure interactions) and Hand Identity labels (which hand manipulates each tool)</li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="content mt-4">
-      <p>To annotate additional labels, two clinical experts from Samsung Medical Center refined the bounding boxes in Endoscapes-Bbox201.</p>
-      <ul>
-        <li><b>Step 1</b>: We refined Bounding Boxes from Endoscapes-Bbox201</li>
-        <li><b>Step 2</b>: We subdivided the 'Tool' class into 6 classes</li>
-        <li><b>Step 3</b>: We annotated Action labels (tool–structure interactions) and Hand Identity labels (which hand manipulates each tool)</li>
-      </ul>
-    </div>
+
   </div>
 </section>
 
 <!-- Dataset Comparison -->
 <section class="section pt-4 pb-5">
   <div class="container narrow-container">
-    <div class="has-text-centered">
-      <h3 class="h-subtitle">Dataset Comparison</h3>
+
+    <div class="columns is-centered">
+      <div class="column is-12-tablet is-10-desktop has-text-centered">
+        <h3 class="h-subtitle">Dataset Comparison</h3>
+      </div>
     </div>
+
     <div class="columns is-centered mt-3">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <figure class="figure section-figure">
@@ -182,15 +197,22 @@ code: https://github.com/ailab-kyunghee/SSG-Com
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
 <!-- Endoscapes-SG201 Details -->
 <section class="section pt-4 pb-5">
   <div class="container narrow-container">
+
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <h3 class="h-subtitle">Endoscapes-SG201 Details</h3>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-12-tablet is-10-desktop has-text-centered">
         <figure class="figure section-figure">
           <img src="./static/image/4.png" alt="Endoscapes-SG201 Dataset Details">
         </figure>
@@ -205,55 +227,79 @@ code: https://github.com/ailab-kyunghee/SSG-Com
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
 <!-- SSG-Com -->
 <section class="section pt-5 pb-5">
   <div class="container narrow-container">
+
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <h2 class="h-title">SSG-Com</h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-12-tablet is-10-desktop has-text-centered">
         <figure class="figure section-figure">
           <img src="./static/image/5.png" alt="SSG-Com Overall Architecture">
         </figure>
       </div>
     </div>
-    <div class="content">
-      <p><b>SSG-Com</b> is designed to leverage the diverse labels of Endoscapes-SG201.</p>
-      <ol>
-        <li><b>Graph Construction</b><br>
-          <b>Nodes</b>: Surgical instruments (with Hand identity), Anatomical structures<br>
-          <b>Edges</b>: Spatial relations, Surgical action relations
-        </li>
-        <li class="mt-3"><b>Multi-task training with 3 classifiers</b>
-          <ul>
-            <li>Spatial relation classification</li>
-            <li>Action relation classification</li>
-            <li>Hand identity classification</li>
-          </ul>
-          <div class="mt-2">
-            <b>Total Loss</b>: \( L_{\text{total}} = L_{\text{LG}} + \lambda_{\text{action}} L_{\text{action}} + \lambda_{\text{hand}} L_{\text{hand}} \)
-          </div>
-        </li>
-      </ol>
+
+    <div class="columns is-centered">
+      <div class="column is-12-tablet is-10-desktop">
+        <div class="content has-text-justified">
+          <p><b>SSG-Com</b> is designed to leverage the diverse labels of Endoscapes-SG201.</p>
+          <ol>
+            <li>
+              <b>Graph Construction</b><br>
+              <b>Nodes</b>: Surgical instruments (with Hand identity), Anatomical structures<br>
+              <b>Edges</b>: Spatial relations, Surgical action relations
+            </li>
+            <li class="mt-3">
+              <b>Multi-task training with 3 classifiers</b>
+              <ul>
+                <li>Spatial relation classification</li>
+                <li>Action relation classification</li>
+                <li>Hand identity classification</li>
+              </ul>
+              <div class="mt-2">
+                <b>Total Loss</b>: \( L_{\text{total}} = L_{\text{LG}} + \lambda_{\text{action}} L_{\text{action}} + \lambda_{\text{hand}} L_{\text{hand}} \)
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
     </div>
+
   </div>
 </section>
 
 <!-- Experimental Results -->
 <section class="section pt-5 pb-4">
   <div class="container narrow-container">
-    <div class="has-text-centered">
-      <h1 class="h-title">Experimental Results</h1>
+
+    <div class="columns is-centered">
+      <div class="column is-12-tablet is-10-desktop has-text-centered">
+        <h1 class="h-title">Experimental Results</h1>
+      </div>
     </div>
-    <div class="content mt-3">
-      <p>The latent graph of SSG-Com demonstrated its effectiveness across two downstream tasks.</p>
-      <ul>
-        <li>Action Triplet Recognition</li>
-        <li>CVS prediction</li>
-      </ul>
+
+    <div class="columns is-centered">
+      <div class="column is-12-tablet is-10-desktop">
+        <div class="content mt-3">
+          <p>The latent graph of SSG-Com demonstrated its effectiveness across two downstream tasks.</p>
+          <ul>
+            <li>Action Triplet Recognition</li>
+            <li>CVS prediction</li>
+          </ul>
+        </div>
+      </div>
     </div>
+
     <div class="columns is-centered mt-4">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <h2 class="h-subtitle">Quantitative Results</h2>
@@ -273,6 +319,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
         </div>
       </div>
     </div>
+
     <div class="columns is-centered mt-5">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <h2 class="h-subtitle">Qualitative Results</h2>
@@ -284,6 +331,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
