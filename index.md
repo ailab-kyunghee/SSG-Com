@@ -21,7 +21,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 <div class="columns is-centered has-text-centered">
     <div class="column">
         <h3>Abstract</h3>
-        <div class="content is-medium has-text-justified">
+        <div class="content has-text-justified">
         Surgical scene understanding is crucial for computer-assisted intervention systems, requiring visual comprehension of surgical scenes that involves diverse elements such as surgical tools, anatomical structures, and their interactions. 
         To effectively represent the complex information in surgical scenes, graph-based approaches have been explored to structurally model surgical entities and their relationships. 
         However, aspects such as tool–action–target combinations and the identity of the operating hand remain underexplored. 
