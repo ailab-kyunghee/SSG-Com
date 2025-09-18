@@ -31,7 +31,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
         </div>
     </div>
 </div>
-
+<div style="height: 100px;"></div>
 <div class="is-centered">
   <h1>Main Contributions</h1>
   <div class="is-four-fifths has-text-centered">
@@ -49,7 +49,7 @@ To annotate additional labels, two clinical experts from Samsung Medical Center 
 - **Step 1**: We refined Bounding Boxes from Endoscapes-Bbox201
 - **Step 2**: We subdivided the 'Tool' class into 6 classes
 - **Step 3**: We annotated Action labels which describes interactions between tools and anatomical structures, and Hand Identity labels which specifies which hand is manipulating each tool
-
+<div style="height: 50px;"></div>
 <div class="is-centered">
     <h3>Dataset Comparison</h3>
     <div class="is-four-fifths has-text-centered">
@@ -68,6 +68,7 @@ This table contrasts the datasets used in previous surgical scene graph studies 
 
 - By unifying these elements, the dataset provides a more expressive and comprehensive foundation for modeling surgical scenes.
       
+<div style="height: 50px;"></div>
 <div class="is-centered">
     <div class="is-four-fifths has-text-centered">
       <div class="content has-text-justified">
@@ -85,6 +86,7 @@ This table presents the category-wise distribution of the additional labels intr
 - **3 Hand Identities**: Operator’s Right Hand (Rt), Operator’s Left Hand (Lt), Assistant’s Hand (Assi)
 
 
+<div style="height: 80px;"></div>
 <div>
   <div class="is-four-fifths">
     <h2>SSG-Com</h2>
@@ -92,6 +94,7 @@ This table presents the category-wise distribution of the additional labels intr
   </div>
 </div>
 
+<div style="height: 100px;"></div>
 SSG-Com is designed to leverage the diverse labels of Endoscapes-SG201.
 1. **Graph Construction**  
    - **Nodes**: Surgical instruments(with Hand identity), Anatomical structures  
@@ -113,6 +116,7 @@ SSG-Com is designed to leverage the diverse labels of Endoscapes-SG201.
 The latent graph of SSG-Com demonstrated its effectiveness across two downstream tasks.
 - Action Triplet Recognition
 - CVS prediction
+<div style="height: 50px;"></div>
 
 <div class="is-centered">
   <div class="is-four-fifths">
@@ -128,6 +132,7 @@ In **Action Triplet Recognition (a):**
 In **CVS Prediction (b):**
 - Using Endoscapes-SG201 improved the performance of LG-CVS by 0.9 mAP, and SSG-Com achieved the highest score of 64.6.
 
+<div style="height: 50px;"></div>
 
 <div class="is-centered">
   <div class="is-four-fifths">
@@ -140,6 +145,7 @@ In **CVS Prediction (b):**
 </div>
 
 
+<div style="height: 300px;"></div>
 
 <div class="is-centered ">
   <div class="is-four-fifths">
