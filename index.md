@@ -148,8 +148,9 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
           {% endif %}
           {% if page.code_url %}
           <a href="https://ailab-kyunghee.github.io/SSG-Com/"
-             class="button is-link is-rounded is-medium">
-            <span class="icon"><i class="fab fa-github"></i></span><span>Dataset(Coming Aug 23)</span>
+            class="button is-link is-rounded is-medium">
+            <span class="icon"><i class="fas fa-database" aria-hidden="true"></i></span>
+            <span>Dataset (Coming Aug 23)</span>
           </a>
           {% endif %}
         </div>
