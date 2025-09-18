@@ -15,23 +15,33 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
 ---
 
 <style>
-/* 데스크톱에서 본문 가독성 약간 키우기 */
-@media screen and (min-width: 1024px) {
-  .abstract-section .content {
-    font-size: 1.125rem; /* ~18px */
-    line-height: 1.85;
-  }
-}
+/* --- Desktop 확대 설정 --- */
 
-/* 아주 큰 화면에서 중앙 폭 제한 (가독성) */
-@media screen and (min-width: 1408px) {
+/* 데스크톱(≥1216px): 본문 폭 살짝 확대 */
+@media screen and (min-width: 1216px) {
   .narrow-container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
 
-/* 이미지 반응형 */
+/* 와이드스크린(≥1408px): 본문 폭 더 확대 */
+@media screen and (min-width: 1408px) {
+  .narrow-container {
+    max-width: 1280px; /* 기존 1100 → 1280 */
+    margin: 0 auto;
+  }
+}
+
+/* 모든 컨텐츠 블록의 기본 폰트(데스크톱에서 크게) */
+@media screen and (min-width: 1024px) {
+  .narrow-container .content {
+    font-size: 1.2rem;   /* 기존 ~1.125 → 1.2 */
+    line-height: 1.9;    /* 기존 1.85 → 1.9 */
+  }
+}
+
+/* 이미지 반응형 (컨테이너 확대에 따라 자동으로 커짐) */
 .figure img {
   width: 100%;
   height: auto;
@@ -49,10 +59,19 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
   margin-bottom: 1.5rem;
 }
 
-/* 헤더 크기 */
-.h-title { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 700; }
-.h-subtitle { font-size: clamp(1.25rem, 2.2vw, 1.75rem); font-weight: 700; }
-.h-minor { font-size: clamp(1.125rem, 1.8vw, 1.375rem); font-weight: 700; }
+/* 제목들: PC에서 더 크게 보이도록 상한 확대 */
+.h-title { /* 메인 제목 */
+  font-size: clamp(1.75rem, 3.2vw, 2.75rem); /* max 2.25 → 2.75 */
+  font-weight: 700;
+}
+.h-subtitle { /* 섹션 제목 */
+  font-size: clamp(1.35rem, 2.4vw, 2.125rem); /* max 1.75 → 2.125 */
+  font-weight: 700;
+}
+.h-minor { /* 소제목 */
+  font-size: clamp(1.2rem, 2vw, 1.625rem); /* max 1.375 → 1.625 */
+  font-weight: 700;
+}
 </style>
 
 <!-- Hero Illustration + 링크 버튼 -->
@@ -71,17 +90,20 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
       <div class="column is-12-tablet is-10-desktop">
         <div class="link-blocks has-text-centered mt-4">
           {% if page.paper_url %}
-          <a href="{{ page.paper_url }}" target="_blank" rel="noopener" class="button is-dark is-rounded is-small">
+          <a href="{{ page.paper_url }}" target="_blank" rel="noopener"
+             class="button is-dark is-rounded is-medium">
             <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
           </a>
           {% endif %}
           {% if page.eposter_url %}
-          <a href="{{ page.eposter_url }}" target="_blank" rel="noopener" class="button is-dark is-rounded is-small">
+          <a href="{{ page.eposter_url }}" target="_blank" rel="noopener"
+             class="button is-dark is-rounded is-medium">
             <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Poster</span>
           </a>
           {% endif %}
           {% if page.code_url %}
-          <a href="{{ page.code_url }}" target="_blank" rel="noopener" class="button is-link is-rounded is-small">
+          <a href="{{ page.code_url }}" target="_blank" rel="noopener"
+             class="button is-link is-rounded is-medium">
             <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
           </a>
           {% endif %}
@@ -110,8 +132,6 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
     </div>
   </div>
 </section>
-
-<!-- 이하 내용은 그대로 유지 -->
 
 <!-- Main Contributions -->
 <section class="section pt-5 pb-5">
