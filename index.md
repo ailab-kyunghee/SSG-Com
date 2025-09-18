@@ -150,7 +150,7 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
           <a href="https://ailab-kyunghee.github.io/SSG-Com/"
             class="button is-link is-rounded is-medium">
             <span class="icon"><i class="fas fa-database" aria-hidden="true"></i></span>
-            <span>Dataset (Coming Aug 23)</span>
+            <span>Dataset (Coming Sep 23)</span>
           </a>
           {% endif %}
         </div>
