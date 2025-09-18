@@ -9,18 +9,10 @@ authors:
 affiliations:
   - ¹Department of Surgery, Samsung Medical Center, Seoul 06351, Republic of Korea
   - ²Kyung Hee University, Yongin 17104, Republic of Korea
-paper: https://arxiv.org/pdf/2507.15541
-eposter: https://github.com/user-attachments/files/22401658/SSG.Poster.pdf
-code: https://github.com/ailab-kyunghee/SSG-Com
+paper_url: https://arxiv.org/pdf/2507.15541
+eposter_url: https://github.com/user-attachments/files/22401658/SSG.Poster.pdf
+code_url: https://github.com/ailab-kyunghee/SSG-Com
 ---
-
-<!--
-  Bulma 기반 반응형 튜닝 요약:
-  - section/container 사용으로 좌우 폭 제어
-  - is-size-*-mobile/tablet/desktop 로 타이포 반응형
-  - mt-*, mb-* 로 간격 제어 (inline height 제거)
-  - columns 로 이미지/텍스트 폭 반응형
--->
 
 <style>
 /* 데스크톱에서 본문 가독성 약간 키우기 */
@@ -32,7 +24,7 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 }
 
 /* 아주 큰 화면에서 중앙 폭 제한 (가독성) */
-@media screen and (min-width: 1408px) { /* Bulma widescreen+ */
+@media screen and (min-width: 1408px) {
   .narrow-container {
     max-width: 1100px;
     margin: 0 auto;
@@ -58,18 +50,9 @@ code: https://github.com/ailab-kyunghee/SSG-Com
 }
 
 /* 헤더 크기 */
-.h-title { /* 메인 제목 */
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
-  font-weight: 700;
-}
-.h-subtitle { /* 섹션 타이틀 */
-  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
-  font-weight: 700;
-}
-.h-minor { /* 소제목 */
-  font-size: clamp(1.125rem, 1.8vw, 1.375rem);
-  font-weight: 700;
-}
+.h-title { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 700; }
+.h-subtitle { font-size: clamp(1.25rem, 2.2vw, 1.75rem); font-weight: 700; }
+.h-minor { font-size: clamp(1.125rem, 1.8vw, 1.375rem); font-weight: 700; }
 </style>
 
 <!-- Hero Illustration + 링크 버튼 -->
@@ -87,18 +70,18 @@ code: https://github.com/ailab-kyunghee/SSG-Com
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop">
         <div class="link-blocks has-text-centered mt-4">
-          {% if page.paper %}
-          <a href="{{ page.paper }}" target="_blank" rel="noopener" class="button is-dark is-rounded is-small">
+          {% if page.paper_url %}
+          <a href="{{ page.paper_url }}" target="_blank" rel="noopener" class="button is-dark is-rounded is-small">
             <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
           </a>
           {% endif %}
-          {% if page.eposter %}
-          <a href="{{ page.eposter }}" target="_blank" rel="noopener" class="button is-dark is-rounded is-small">
+          {% if page.eposter_url %}
+          <a href="{{ page.eposter_url }}" target="_blank" rel="noopener" class="button is-dark is-rounded is-small">
             <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Poster</span>
           </a>
           {% endif %}
-          {% if page.code %}
-          <a href="{{ page.code }}" target="_blank" rel="noopener" class="button is-link is-rounded is-small">
+          {% if page.code_url %}
+          <a href="{{ page.code_url }}" target="_blank" rel="noopener" class="button is-link is-rounded is-small">
             <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
           </a>
           {% endif %}
@@ -127,6 +110,8 @@ code: https://github.com/ailab-kyunghee/SSG-Com
     </div>
   </div>
 </section>
+
+<!-- 이하 내용은 그대로 유지 -->
 
 <!-- Main Contributions -->
 <section class="section pt-5 pb-5">
