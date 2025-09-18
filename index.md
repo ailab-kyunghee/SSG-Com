@@ -298,9 +298,9 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
               <b>Classifier 3</b>: Hand identity classification
               <div class="mt-2 math-block">
                 <b>Total Loss</b>:
-                \[
-                L_{\text{total}} = L_{\text{LG}} + \lambda_{\text{action}} L_{\text{action}} + \lambda_{\text{hand}} L_{\text{hand}}
-                \]
+                  \[
+                  L_{\text{total}} = L_{\text{LG}} + \lambda_{\text{action}} L_{\text{action}} + \lambda_{\text{hand}} L_{\text{hand}} \tag*{}
+                  \]
               </div>
             </li>
           </ol>
