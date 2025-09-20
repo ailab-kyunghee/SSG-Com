@@ -180,36 +180,39 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
 </section>
 
 ---
+
 <!-- Main Contributions -->
 <section class="section pt-5 pb-5">
   <div class="container narrow-container">
     <div class="columns is-centered">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <h1 class="h-title">Main Contributions</h1>
-        <ul class="content has-text-left mt-4" style="display:inline-block; text-align:left;">
-          <li>Proposed <strong>SurgX</strong>, the first concept-based explanation framework for surgical phase recognition.</li>
-          <li>Developed specialized concept sets for cholecyastectomy videos and anlyzed best practices for concept selection.</li>
-          <li>Validated SurgX on two models(Causal ASFormer, TeCNO), demonstrating meaningful concept–neuron associations that enhance interpretability.</li>
-        </ul>
       </div>
     </div>
-    <div class="columns is-centered mt-6">
+    <div class="columns is-centered mt-4">
       <div class="column is-12-tablet is-10-desktop has-text-centered">
         <div class="figure section-figure">
           <img src="./static/image/2.png" alt="Key Contribution">
         </div>
-        <h2 class="h-title">Concept Set Construction</h2>
+        <h2 class="h-title">Endoscapes-SG201</h2>
         <div class="figure section-figure">
           <img src="./static/image/construction.png" alt="Construction">
         </div>
         <div class="content has-text-justified">
-          <p>Details about concept set 1, 2, and 3 go here.</p>
+          <p>
+            We were fortunate to build <a href="https://github.com/ailab-kyunghee/SSG-Com" target="_blank" rel="noopener">Endoscapes-SG201</a>, a dataset for holistic scene graph research, by extending and refining the publicly available <a href="https://github.com/CAMMA-public/Endoscapes" target="_blank" rel="noopener">Endoscapes-Bbox201</a> dataset released by CAMMA.
+            To annotate additional labels, two clinical experts from Samsung Medical Center refined the bounding boxes in Endoscapes-Bbox201.
+          </p>
+          <ul>
+            <li><b>Step 1</b>: We refined Bounding Boxes from Endoscapes-Bbox201</li>
+            <li><b>Step 2</b>: We subdivided the 'Tool' class into 6 classes</li>
+            <li><b>Step 3</b>: We annotated Action labels (tool–structure interactions) and Hand Identity labels (which hand manipulates each tool)</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
 <!-- Dataset Comparison -->
 <section class="section pt-4 pb-5">
