@@ -4,7 +4,7 @@ import copy
 # modify base for different detectors
 _base_ = [
     '../lg_save_base.py',
-    os.path.expandvars('/data/cekkec/project/mmdetection/configs/_base_/models/faster-rcnn_r50_fpn.py'),
+    os.path.expandvars('$MMDETECTION/configs/_base_/models/faster-rcnn_r50_fpn.py'),
 ]
 
 # extract detector, data preprocessor config from base

@@ -1,7 +1,7 @@
 import os
 import copy
 
-_base_ = os.path.expandvars('/data/cekkec/project/mmdetection/configs/_base_/datasets/coco_instance.py')
+_base_ = os.path.expandvars('$MMDETECTION/configs/_base_/datasets/coco_instance.py')
 custom_imports = dict(imports=['datasets.custom_loading'], allow_failed_imports=False)
 
 # Modify dataset related settings

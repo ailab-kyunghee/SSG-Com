@@ -4,8 +4,8 @@ import os
 _base_ = [
     # '../datasets/endoscapes/endoscapes_instance.py',
      '../datasets/endoscapes/endoscapes_instance.py',# ddd
-    os.path.expandvars('/data/cekkec/project/mmdetection/configs/_base_/schedules/schedule_1x.py'),
-    os.path.expandvars('/data/cekkec/project/mmdetection/configs/_base_/default_runtime.py')
+    os.path.expandvars('$MMDETECTION/configs/_base_/schedules/schedule_1x.py'),
+    os.path.expandvars('$MMDETECTION/configs/_base_/default_runtime.py')
 ]
 
 data_root = _base_.data_root
@@ -129,5 +129,5 @@ test_cfg = dict(type='TestLoop')
 
 # hooks
 default_hooks = dict(
-    checkpoint=dict(save_best='endoscapes/ds_average_precision'),
+    checkpoint=dict(save_best='endoscapes/mAP'),
 )

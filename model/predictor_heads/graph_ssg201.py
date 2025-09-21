@@ -23,7 +23,7 @@ from .modules.gnn import GNNHead
 from collections import Counter #---
 from collections import defaultdict #---
 @MODELS.register_module()
-class GraphHead_null_node(BaseModule, metaclass=ABCMeta):
+class GraphHead_ssg201(BaseModule, metaclass=ABCMeta):
     """Graph Head to construct graph from detections
 
     Args:

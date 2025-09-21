@@ -1,7 +1,7 @@
 import os
 import copy
 
-_base_ = ['lg_base_box_refine.py']
+_base_ = ['lg_base_box_ssg201.py']
 
 # import freeze hook
 orig_imports = _base_.custom_imports.imports
@@ -16,7 +16,7 @@ lg_model = _base_.lg_model
 lg_model.perturb_factor = 0.125
 lg_model.ds_head = dict(
     type='DSHead',
-    num_classes=52,
+    num_classes=34,
     gnn_cfg=dict(
         type='GNNHead',
         num_layers=3,
@@ -119,7 +119,7 @@ train_evaluator = dict(
     ann_file=os.path.join(_base_.data_root, 'train/annotation_ds_coco_triplet_full.json'),
     use_pred_boxes_recon=True,
     metric=[],
-    num_classes=52,
+    num_classes=34,
     outfile_prefix='./results/endoscapes_preds/train/lg',
 )
 val_evaluator = dict(
@@ -130,7 +130,7 @@ val_evaluator = dict(
     ann_file=os.path.join(_base_.data_root, 'val/annotation_ds_coco_triplet_full.json'),
     use_pred_boxes_recon=True,
     metric=[],
-    num_classes=52,
+    num_classes=34,
     outfile_prefix='./results/endoscapes_preds/val/lg',
 )
 
@@ -141,7 +141,7 @@ test_evaluator = dict(
     data_prefix=_base_.test_dataloader.dataset.data_prefix.img,
     ann_file=os.path.join(_base_.data_root, 'test/annotation_ds_coco_triplet_full.json'),
     metric=[],
-    num_classes=52,
+    num_classes=34,
     #additional_metrics = ['reconstruction'],
     use_pred_boxes_recon=True,
     outfile_prefix='./results/endoscapes_preds/test/lg',

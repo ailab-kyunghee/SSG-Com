@@ -2,11 +2,11 @@ import os
 
 # dataset, optimizer, and runtime cfgs
 _base_ = [
-    '../datasets/endoscapes/endoscapes_instance_plus_plus.py',
-    os.path.expandvars('/data/cekkec/project/mmdetection/configs/_base_/schedules/schedule_1x.py'),
-    os.path.expandvars('/data/cekkec/project/mmdetection/configs/_base_/default_runtime.py')
+    '../datasets/endoscapes/endoscapes_instance_ssg201.py',
+    os.path.expandvars('$MMDETECTION/configs/_base_/schedules/schedule_1x.py'),
+    os.path.expandvars('$MMDETECTION/configs/_base_/default_runtime.py')
 ]
-#configs/datasets/endoscapes/endoscapes_instance_plus_plus.py
+
 data_root = _base_.data_root
 val_data_prefix = _base_.val_dataloader.dataset.data_prefix.img
 test_data_prefix = _base_.test_dataloader.dataset.data_prefix.img

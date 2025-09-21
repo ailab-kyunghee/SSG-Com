@@ -2,7 +2,7 @@ import copy
 import os
 
 _base_=['../lg_base_box.py',
-    os.path.expandvars('/data/cekkec/project/mmdetection/configs/_base_/models/faster-rcnn_r50_fpn.py'),
+    os.path.expandvars('$MMDETECTION/configs/_base_/models/faster-rcnn_r50_fpn.py'),
 ]
 # custom imports to register custom modules - extend base imports
 orig_imports = _base_.custom_imports.imports

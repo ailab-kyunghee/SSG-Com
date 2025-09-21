@@ -1,7 +1,7 @@
 import os
 import copy
 
-_base_ = ['lg_base_box.py']
+_base_ = ['lg_base_box_ssg201.py']
 
 # import freeze hook
 orig_imports = _base_.custom_imports.imports
@@ -16,7 +16,7 @@ lg_model = _base_.lg_model
 lg_model.perturb_factor = 0.125
 lg_model.ds_head = dict(
     type='DSHead',
-    num_classes=34,
+    num_classes=3,
     gnn_cfg=dict(
         type='GNNHead',
         num_layers=3,
@@ -37,7 +37,7 @@ lg_model.ds_head = dict(
     loss=dict(
         type='CrossEntropyLoss',
         use_sigmoid=True,
-        # class_weight=[3.19852941, 4.46153846, 2.79518072],
+        class_weight=[3.19852941, 4.46153846, 2.79518072],
     ),
     loss_weight=1.0,
     num_predictor_layers=3,
@@ -85,7 +85,7 @@ lg_model.force_train_graph_head = True
 train_dataloader = dict(
     batch_size=32,
     dataset=dict(
-        ann_file='train/annotation_ds_coco_triplet_full.json',
+        ann_file='train/annotation_ds_coco.json',
         filter_cfg=dict(filter_empty_gt=False),
     ),
 )
@@ -93,20 +93,20 @@ train_eval_dataloader = dict(
     batch_size=32,
     num_workers=2,
     dataset=dict(
-        ann_file='train/annotation_ds_coco_triplet_full.json',
+        ann_file='train/annotation_ds_coco.json',
         test_mode=True,
     ),
 )
 val_dataloader = dict(
     batch_size=32,
     dataset=dict(
-        ann_file='val/annotation_ds_coco_triplet_full.json',
+        ann_file='val/annotation_ds_coco.json',
     ),
 )
 test_dataloader = dict(
     batch_size=32,
     dataset=dict(
-        ann_file='test/annotation_ds_coco_triplet_full.json',
+        ann_file='test/annotation_ds_coco.json',
     ),
 )
 
@@ -116,10 +116,10 @@ train_evaluator = dict(
     prefix='endoscapes',
     data_root=_base_.data_root,
     data_prefix=_base_.train_eval_dataloader.dataset.data_prefix.img,
-    ann_file=os.path.join(_base_.data_root, 'train/annotation_ds_coco_triplet_full.json'),
+    ann_file=os.path.join(_base_.data_root, 'train/annotation_ds_coco.json'),
     use_pred_boxes_recon=True,
     metric=[],
-    num_classes=34,
+    num_classes=3,
     outfile_prefix='./results/endoscapes_preds/train/lg',
 )
 val_evaluator = dict(
@@ -127,10 +127,10 @@ val_evaluator = dict(
     prefix='endoscapes',
     data_root=_base_.data_root,
     data_prefix=_base_.val_dataloader.dataset.data_prefix.img,
-    ann_file=os.path.join(_base_.data_root, 'val/annotation_ds_coco_triplet_full.json'),
+    ann_file=os.path.join(_base_.data_root, 'val/annotation_ds_coco.json'),
     use_pred_boxes_recon=True,
     metric=[],
-    num_classes=34,
+    num_classes=3,
     outfile_prefix='./results/endoscapes_preds/val/lg',
 )
 
@@ -139,9 +139,9 @@ test_evaluator = dict(
     prefix='endoscapes',
     data_root=_base_.data_root,
     data_prefix=_base_.test_dataloader.dataset.data_prefix.img,
-    ann_file=os.path.join(_base_.data_root, 'test/annotation_ds_coco_triplet_full.json'),
+    ann_file=os.path.join(_base_.data_root, 'test/annotation_ds_coco.json'),
     metric=[],
-    num_classes=34,
+    num_classes=3,
     #additional_metrics = ['reconstruction'],
     use_pred_boxes_recon=True,
     outfile_prefix='./results/endoscapes_preds/test/lg',
@@ -164,7 +164,7 @@ auto_scale_lr = dict(enable=False)
 # hooks
 custom_hooks = [dict(type="CopyDetectorBackbone"), dict(type="FreezeHook")]
 default_hooks = dict(
-    checkpoint=dict(save_best='endoscapes/ds_average_precision'),
+    checkpoint=dict(save_best='endoscapes/mAP'),
     visualization=dict(draw=False),
 )
 
@@ -174,7 +174,12 @@ load_from = 'weights/endoscapes/lg_base.pth'
 # visualization
 visualizer = dict(
     type='LatentGraphVisualizer',
+    name='LatentGraphVisualizer',  # Required: identifier for the visualizer
     dataset='endoscapes',
-    data_prefix='test',
-    draw=True,
+    detector='faster_rcnn',         # Optional if default is acceptable
+    results_dir='results',           # Optional if default is acceptable
+    data_prefix='test_final_04_real',
+    save_graphs=False,                # Set to True if you want to save latent graphs
+    gt_graph_use_pred_instances=False,  # Use predicted instances for gt graph generation
+    draw=False,                       # Set to True to enable drawing/saving of images
 )

@@ -3,8 +3,8 @@ import os
 # dataset, optimizer, and runtime cfgs
 _base_ = [
     '../datasets/endoscapes/endoscapes_instance.py',# ddd
-    os.path.expandvars('/data/cekkec/project/mmdetection/configs/_base_/schedules/schedule_1x.py'),
-    os.path.expandvars('/data/cekkec/project/mmdetection/configs/_base_/default_runtime.py')
+    os.path.expandvars('$MMDETECTION/configs/_base_/schedules/schedule_1x.py'),
+    os.path.expandvars('$MMDETECTION/configs/_base_/default_runtime.py')
 ] # vvv
 
 

@@ -23,7 +23,7 @@ from .predictor_heads.modules.loss import ReconstructionLoss
 from .predictor_heads.modules.layers import build_mlp
 from .predictor_heads.graph import GraphHead
 
-from .predictor_heads.graph_null_node_hand import GraphHead_null_node # this is our main method for miccai2025
+from .predictor_heads.graph_ssg201 import GraphHead_ssg201 # this is our main method for miccai2025
 
 from .predictor_heads.ds import DSHead
 from .predictor_heads.modules.utils import dense_mask_to_polygon_mask

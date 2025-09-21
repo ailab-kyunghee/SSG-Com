@@ -3,10 +3,10 @@ import copy
 
 # modify base for different detectors
 _base_ = [
-    '../lg_ds_base_pseudo_tool.py',
-    os.path.expandvars('/data/cekkec/project/mmdetection/configs/_base_/models/faster-rcnn_r50_fpn.py'),
+    '../lg_ds_base_ssg201.py',
+    os.path.expandvars('$MMDETECTION/configs/_base_/models/faster-rcnn_r50_fpn.py'),
 ]
-# configs/models/lg_ds_base_pseudo_tool.py
+
 # extract detector, data preprocessor config from base
 detector = copy.deepcopy(_base_.model)
 detector.roi_head.bbox_head.num_classes = _base_.num_classes
@@ -24,6 +24,7 @@ model.roi_extractor = copy.deepcopy(detector.roi_head.bbox_roi_extractor)
 model.roi_extractor.roi_layer.output_size = 1
 model.reconstruction_img_stats=dict(mean=dp.mean, std=dp.std)
 model.sem_feat_use_masks = False
+
 # trainable bb, neck
 model.trainable_backbone_cfg=copy.deepcopy(detector.backbone)
 model.trainable_backbone_cfg.frozen_stages=_base_.trainable_backbone_frozen_stages
@@ -50,19 +51,11 @@ custom_hooks = [dict(type="CopyDetectorBackbone"), dict(type="FreezeHook")]
 #     visualization=dict(draw=False),
 # )
 default_hooks = dict(
-    #visualization=dict(type='DetVisualizationHook', enabled=False)
+    checkpoint=dict(save_best='endoscapes/mAP'),
+    # visualization=dict(type='DetVisualizationHook', enabled=False)
     visualization=dict(type='DetVisualizationHook', draw=False, score_thr=0.2, show=False)
 )
 
 # loading
 load_from = 'weights/endoscapes/lg_base.pth'
 
-# # visualization
-# visualizer = dict(
-#     type='LatentGraphVisualizer',
-#     dataset='endoscapes',
-#     data_prefix='test',
-#     draw=False,
-# )
-
-#visualizer/LatentGraphVisualizer.py

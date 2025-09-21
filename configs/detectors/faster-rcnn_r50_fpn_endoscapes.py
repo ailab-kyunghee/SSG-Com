@@ -2,10 +2,10 @@ import os
 import wandb
 
 _base_ = [
-    os.path.expandvars('/data/cekkec/project/mmdetection/configs/_base_/models/faster-rcnn_r50_fpn.py'),
+    os.path.expandvars('$MMDETECTION/configs/_base_/models/faster-rcnn_r50_fpn.py'),
     '../datasets/endoscapes_instance.py',
-    os.path.expandvars('/data/cekkec/project/mmdetection/configs/_base_/schedules/schedule_1x.py'),
-    os.path.expandvars('/data/cekkec/project/mmdetection/configs/_base_/default_runtime.py'),
+    os.path.expandvars('$MMDETECTION/configs/_base_/schedules/schedule_1x.py'),
+    os.path.expandvars('$MMDETECTION/configs/_base_/default_runtime.py'),
 ]
 
 # We also need to change the num_classes in head to match the dataset's annotation
