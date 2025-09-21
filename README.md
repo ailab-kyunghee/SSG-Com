@@ -81,7 +81,7 @@ Update the dataset path by replacing: data_root='/local_datasets/endoscapes' to 
 ## Train & Test
 **SSG-COM**
 <div align="center">
-<img src="ssg_com_figl.png" width="90%">
+<img src="ssg_com_fig.png" width="90%">
 </div>
 
 ```sh
