@@ -147,10 +147,10 @@ code_url: https://github.com/ailab-kyunghee/SSG-Com
           </a>
           {% endif %}
           {% if page.code_url %}
-          <a href="https://ailab-kyunghee.github.io/SSG-Com/"
+          <a href="https://1drv.ms/u/c/56d948a627b33139/EbqOPJgj0khEuDYYz0593g4B8vvysiOjLDq1LvbNeQqt8A?e=ePG9ux"
             class="button is-link is-rounded is-medium">
             <span class="icon"><i class="fas fa-database" aria-hidden="true"></i></span>
-            <span>Dataset (Coming Sep 23)</span>
+            <span>Dataset Download</span>
           </a>
           {% endif %}
         </div>
