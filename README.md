@@ -18,7 +18,7 @@ Endoscapes-SG201 provides:
 
 Download the Endoscapes dataset from [![Download Endoscapes](https://img.shields.io/badge/Download-Endoscapes-blue)](https://github.com/CAMMA-public/Endoscapes)
 
-Download Endoscapes-SSG201 from [![Endoscapes-SSG201](https://img.shields.io/badge/Download-Endoscapes--SG201%20Annotations-green)](https://github.com/user-attachments/files/22583579/Endoscapes-SG201.zip)
+Download Endoscapes-SG201 from [![Endoscapes-SG201](https://img.shields.io/badge/Download-Endoscapes--SG201%20Annotations-green)](https://github.com/user-attachments/files/22583579/Endoscapes-SG201.zip)
 
 
 The final directory structure should be as follows:
@@ -56,7 +56,7 @@ data/mmdet_datasets
 
 ## Installation
 ⚠️ Note: For installation and environment setup, follow the original Endoscapes implementation provided in [![LG-CVS](https://img.shields.io/badge/LG--CVS-GitHub-blue)](https://github.com/CAMMA-public/SurgLatentGraph/tree/main).  
-Our dataset (Endoscapes-SSG201) builds on top of this setup.
+Our dataset (Endoscapes-SG201) builds on top of this setup.
 
 ```sh
 # clone mmdetection and export environment variable
@@ -80,7 +80,7 @@ And replace {PATH_TO_ENDOSCAPES} with the path to your endoscapes dataset.
 ```
 
 ## Train & Test
-**SSG-COM**
+**SG-COM**
 <div align="center">
 <img src="ssg_com_fig.png" width="90%">
 </div>
