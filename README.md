@@ -1,4 +1,4 @@
-# ** [MICCAI 2025] Towards Holistic Surgical Scene Graph**
+# [MICCAI 2025] Towards Holistic Surgical Scene Graph**
 This repository contains the official implementation of our MICCAI 2025 paper:
 Towards Holistic Surgical Scene Graph 
 
